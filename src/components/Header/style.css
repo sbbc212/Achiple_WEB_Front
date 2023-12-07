@@ -1,0 +1,13 @@
+.sign {
+    padding: 8px 16px;
+    background: #2AA86B;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.login {
+    padding: 8px 16px;
+    background-color: #191919;
+    border-radius: 6px;
+    color: #fff;
+}
