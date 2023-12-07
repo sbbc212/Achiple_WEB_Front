@@ -2,10 +2,10 @@ import "./style.css";
 
 function Header() {
   return (
-    <div className="w-full h-[88px]">
+    <div className="w-full h-[88px] px-[2rem]">
       <div className="layout">
-        <nav className="h-[88px] flex justify-between items-center">
-          <div className="logo" style={{ cursor: "pointer" }}>
+        <nav className="h-[88px] flex justify-between items-center ">
+          <div className="logo" style={{ width: "200px", cursor: "pointer" }}>
             <a href="/">
               <img src="./img/logo.png" alt="아키플 스튜디오 로고" />
             </a>

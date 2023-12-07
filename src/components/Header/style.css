@@ -1,13 +1,17 @@
 .sign {
-    padding: 8px 16px;
-    background: #2AA86B;
-    border-radius: 6px;
-    color: #fff;
+  padding: 6px 12px;
+  background: #2aa86b;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .login {
-    padding: 8px 16px;
-    background-color: #191919;
-    border-radius: 6px;
-    color: #fff;
+  padding: 6px 12px;
+  background-color: #191919;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
