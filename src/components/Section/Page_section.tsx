@@ -1,6 +1,6 @@
 import React from "react";
 
-function Ar_complete() {
+function Page_section() {
   return (
     <div className="contant">
       <div className="section-tit text-center mb-[60px]" style={{ padding: "120px 60px 0 60px" }}>
@@ -21,4 +21,4 @@ function Ar_complete() {
   );
 }
 
-export default Ar_complete;
+export default Page_section;

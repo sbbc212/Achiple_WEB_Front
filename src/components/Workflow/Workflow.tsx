@@ -1,7 +1,7 @@
 import React from "react";
 
 function Workflow() {
-  return <div>Workflow</div>;
+  return <button>버튼</button>;
 }
 
 export default Workflow;

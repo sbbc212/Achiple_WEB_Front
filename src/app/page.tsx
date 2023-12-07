@@ -1,10 +1,10 @@
-import Ar_complete from "@/components/Ar_complete/Ar_complete";
+import Page_section from "@/components/Section/Page_top_section";
 
 export default function Home() {
   return (
     <div className="w-full">
       <div className="layout">
-        <Ar_complete />
+        <Page_section />
       </div>
     </div>
   );
