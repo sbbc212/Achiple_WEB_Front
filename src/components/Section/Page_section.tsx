@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 import { mainbottom, maintext, topsection } from "@/constants/maindata";
 
 import Linebtn from "../Button/Linebtn";
@@ -26,9 +28,9 @@ function Page_section({ type }: { type: string }) {
   }
   return (
     <div className="contant py-[60px]">
-      {content.map((item) => (
+      {content.map((item, index) => (
         <>
-          <div key={item.id} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
+          <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
             <div className="keyword">
               <p>{item.title}</p>
             </div>
@@ -41,7 +43,7 @@ function Page_section({ type }: { type: string }) {
             <Linebtn />
           </div>
           <div className="card-img-wrap" style={{ width: "100%", height: "auto", borderRadius: "10px", overflow: "hidden" }}>
-            <img src={item.img} alt="3D 작업완료 된 이미지" />
+            <Image src={item.img} alt="3D 작업완료 된 이미지" />
           </div>
         </>
       ))}

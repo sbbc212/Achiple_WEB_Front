@@ -10,8 +10,8 @@ function Full() {
         <h4 className="text-[48px] font-medium">전 세계 기업으로부터 사랑받는</h4>
         <div className="logo-list py-[30px]">
           <ul className="flex justify-center flex-wrap">
-            {logo.map((logoname) => (
-              <li key={logoname.id} className="logo-list-item">
+            {logo.map((logoname, index) => (
+              <li key={index} className="logo-list-item">
                 <a href="#">{logoname.logotitle}</a>
               </li>
             ))}
