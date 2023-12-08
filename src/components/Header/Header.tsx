@@ -31,12 +31,6 @@ function Header() {
               </li>
               <li>
                 <a className="text-[1rem]" href="#">
-                  Resources<i className="arrow">1</i>
-                </a>
-                <ul className="deep-menu"></ul>
-              </li>
-              <li>
-                <a className="text-[1rem]" href="#">
                   Pricing
                 </a>
               </li>

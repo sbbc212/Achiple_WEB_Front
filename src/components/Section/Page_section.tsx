@@ -4,8 +4,8 @@ import Linebtn from "../Button/Linebtn";
 
 function Page_section() {
   return (
-    <div className="contant">
-      <div className="section-tit text-center mb-[60px]" style={{ padding: "120px 60px 0 60px" }}>
+    <div className="contant py-[60px]">
+      <div className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
         <div className="keyword">
           <p>솔루션</p>
         </div>
