@@ -1,6 +1,6 @@
 import React from "react";
 
-import { maintext, topsection } from "@/constants/maindata";
+import { mainbottom, maintext, topsection } from "@/constants/maindata";
 
 import Linebtn from "../Button/Linebtn";
 
@@ -21,7 +21,7 @@ function Page_section({ type }: { type: string }) {
       content = maintext;
       break;
     case "mainbottom":
-      content = maintext;
+      content = mainbottom;
       break;
   }
   return (
