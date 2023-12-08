@@ -10,16 +10,14 @@ export default function Home() {
     <div className="w-full">
       <div className="layout">
         <Page_top_section />
-        <Page_section />
+        <Page_section type="maintop" />
       </div>
       <Full />
       <div className="layout">
-        <Page_section />
-        <Page_section />
-        <Page_section />
+        <Page_section type="topsection" />
         <Textlist />
         <Cardlist />
-        <Page_section />
+        <Page_section type="mainbottom" />
       </div>
       <Full />
       <div className="layout">
