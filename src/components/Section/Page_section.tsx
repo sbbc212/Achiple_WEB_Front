@@ -1,7 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
-
 import { mainbottom, maintext, topsection } from "@/constants/maindata";
 
 import Linebtn from "../Button/Linebtn";
@@ -43,7 +41,7 @@ function Page_section({ type }: { type: string }) {
             <Linebtn />
           </div>
           <div className="card-img-wrap" style={{ width: "100%", height: "auto", borderRadius: "10px", overflow: "hidden" }}>
-            <Image src={item.img} alt="3D 작업완료 된 이미지" />
+            <img src={item.img} alt="3D 작업완료 된 이미지" />
           </div>
         </>
       ))}
