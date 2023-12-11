@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import RecoilFrame from "@/components/RecoilFrame";
+
 import type { Metadata } from "next";
 
 import "./globals.css";
@@ -11,8 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html>
+      <body>
+        <RecoilFrame>{children}</RecoilFrame>
+      </body>
     </html>
   );
 }
