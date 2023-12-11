@@ -2,6 +2,9 @@ import React from "react";
 
 import { mainbottom, maintext, topsection } from "@/constants/maindata";
 
+import SectionImage from "./SectionImage";
+import SectionKeyword from "./SectionKeyword";
+import SectionTitleAndContent from "./SectionTitleAndContent";
 import Linebtn from "../Button/Linebtn";
 
 interface datatype {
@@ -29,20 +32,11 @@ function Page_section({ type }: { type: string }) {
       {content.map((item, index) => (
         <>
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
-            <div className="keyword">
-              <p>{item.title}</p>
-            </div>
-            <h3 className="text-[48px] mb-[14px]" style={{ fontWeight: "600" }}>
-              {item.content}
-            </h3>
-            <p className="pb-[30px]" style={{ maxWidth: "900px", margin: "0 auto", wordBreak: "keep-all" }}>
-              {item.content2}
-            </p>
+            <SectionKeyword sectionkeyword={item.title} />
+            <SectionTitleAndContent contenttitle={item.content} content={item.content2} />
             <Linebtn />
           </div>
-          <div className="card-img-wrap" style={{ width: "100%", height: "auto", borderRadius: "10px", overflow: "hidden" }}>
-            <img src={item.img} alt="3D 작업완료 된 이미지" />
-          </div>
+          <SectionImage sectionimg={item.img} />
         </>
       ))}
     </div>
