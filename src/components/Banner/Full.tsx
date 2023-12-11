@@ -1,7 +1,7 @@
-import React from "react";
+import Link from "next/link";
 
-import "./style.css";
 import { logo } from "@/constants/maindata";
+import "./style.css";
 
 function Full() {
   return (
@@ -12,7 +12,7 @@ function Full() {
           <ul className="flex justify-center flex-wrap">
             {logo.map((logoname, index) => (
               <li key={index} className="logo-list-item">
-                <a href="#">{logoname.logotitle}</a>
+                <Link href="#">{logoname.logotitle}</Link>
               </li>
             ))}
           </ul>
