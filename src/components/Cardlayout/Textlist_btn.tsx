@@ -2,7 +2,7 @@ import React from "react";
 
 import { mainlastsection } from "@/constants/maindata";
 
-import Linebtn from "../Button/Linebtn";
+import TextCard from "./TextCard";
 
 function Textlist_btn() {
   return (
@@ -11,12 +11,8 @@ function Textlist_btn() {
         <h3 className="text-[48px] font-medium">다이빙할 준비가 되셨나요?</h3>
       </div>
       <ul className="flex justify-between pb-[60px]">
-        {mainlastsection.map((lastsection, index) => (
-          <li key={index} className="card-list-item">
-            <span className=" block font-bold text-[18px] mb-[20px]">{lastsection.title}</span>
-            <p className="my-[20px]">{lastsection.content}</p>
-            <Linebtn />
-          </li>
+        {mainlastsection.map((lastsection) => (
+          <TextCard key={lastsection.id} lastsection={lastsection} />
         ))}
       </ul>
     </div>
