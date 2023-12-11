@@ -1,7 +1,3 @@
-import React from "react";
-
-import { mainbottom, maintext, topsection } from "@/constants/maindata";
-
 import SectionImage from "./SectionImage";
 import SectionKeyword from "./SectionKeyword";
 import SectionTitleAndContent from "./SectionTitleAndContent";
@@ -14,21 +10,7 @@ interface datatype {
   content2: string;
   img: string;
 }
-function PageSection({ type }: { type: string }) {
-  let content: datatype[] = [];
-  switch (type) {
-    case "topsection":
-      content = topsection;
-      break;
-    case "maintop":
-      content = maintext;
-      break;
-    case "mainbottom":
-      content = mainbottom;
-      break;
-  }
-  console.log(content);
-
+function PageSection({ content }: { content: datatype[] }) {
   return (
     <div className="contant py-[60px]">
       {content.map((item, index) => (
