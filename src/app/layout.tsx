@@ -1,12 +1,13 @@
 import type { ReactNode } from "react";
 
-// eslint-disable-next-line import/order
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import RecoilFrame from "@/components/RecoilFrame";
+
 import type { Metadata } from "next";
 
 import "./globals.css";
 import "./font/font.css";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 
 export const metadata: Metadata = {
   title: "아키플 스튜디오",
@@ -15,11 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <RecoilFrame>
+          <Header />
+          {children}
+          <Footer />
+        </RecoilFrame>
       </body>
     </html>
   );

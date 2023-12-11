@@ -50,6 +50,7 @@ li {
 }
 
 body {
+  box-sizing: border-box;
   letter-spacing: -0.25px;
   background-color: #fcfcfc;
 }
