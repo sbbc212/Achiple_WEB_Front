@@ -9,9 +9,7 @@ import type { maincardDataType } from "@/constants/maindata";
 const ExampleSection = () => {
   return (
     <ul className="flex justify-between pb-[60px]">
-      <div className="flex">
-        {configuratordata.map((data) => data.cardcontent.map((item: maincardDataType) => <Card key={item.subtitle} cardlist={item} />))}
-      </div>
+      {configuratordata.map((data) => data.cardcontent.map((item: maincardDataType) => <Card key={item.subtitle} cardlist={item} />))}
     </ul>
   );
 };

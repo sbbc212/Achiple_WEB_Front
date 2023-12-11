@@ -34,7 +34,7 @@ function Page_section({ type }: { type: string }) {
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
             <SectionKeyword sectionkeyword={item.title} />
             <SectionTitleAndContent contenttitle={item.content} content={item.content2} />
-            <Linebtn />
+            <Linebtn text="" />
           </div>
           <SectionImage sectionimg={item.img} />
         </>

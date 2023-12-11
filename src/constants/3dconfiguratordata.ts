@@ -72,6 +72,27 @@ export const configuratordata: ConfiguratorDataItem[] = [
         content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
         img: "/img/dummy_img_01.jpg",
       },
+      {
+        id: "4",
+        subtitle: "산업4",
+        secSubtitle: "패션1",
+        content: "3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
+        img: "/img/dummy_img_01.jpg",
+      },
+      {
+        id: "5",
+        subtitle: "산업",
+        secSubtitle: "패션2",
+        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+        img: "/img/dummy_img_01.jpg",
+      },
+      {
+        id: "6",
+        subtitle: "산업3",
+        secSubtitle: "패션3",
+        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+        img: "/img/dummy_img_01.jpg",
+      },
     ],
   },
 ];
