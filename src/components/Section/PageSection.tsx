@@ -11,7 +11,7 @@ interface datatype {
   content2: string;
   img: string;
 }
-function Page_section({ type }: { type: string }) {
+function PageSection({ type }: { type: string }) {
   let content: datatype[] = [];
   switch (type) {
     case "topsection":
@@ -24,6 +24,8 @@ function Page_section({ type }: { type: string }) {
       content = mainbottom;
       break;
   }
+  console.log(content);
+
   return (
     <div className="contant py-[60px]">
       {content.map((item, index) => (
@@ -38,7 +40,7 @@ function Page_section({ type }: { type: string }) {
             <p className="pb-[30px]" style={{ maxWidth: "900px", margin: "0 auto", wordBreak: "keep-all" }}>
               {item.content2}
             </p>
-            <Linebtn />
+            <Linebtn text="" />
           </div>
           <div className="card-img-wrap" style={{ width: "100%", height: "auto", borderRadius: "10px", overflow: "hidden" }}>
             <img src={item.img} alt="3D 작업완료 된 이미지" />
@@ -49,4 +51,4 @@ function Page_section({ type }: { type: string }) {
   );
 }
 
-export default Page_section;
+export default PageSection;

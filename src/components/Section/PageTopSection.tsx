@@ -2,7 +2,7 @@ import React from "react";
 
 import Fillbtn from "../Button/Fillbtn";
 
-function Page_top_section() {
+function PageTopSection() {
   return (
     <div className="contant">
       <div className="section-tit text-center mb-[60px]" style={{ padding: "120px 60px 0 60px" }}>
@@ -14,7 +14,7 @@ function Page_top_section() {
           <span style={{ fontWeight: "700" }}>다운로드나 코드가</span>
           필요 하지 않습니다
         </p>
-        <Fillbtn />
+        <Fillbtn text="지금 시작해보세요." />
       </div>
       <div className="card-img-wrap" style={{ width: "100%", height: "auto", borderRadius: "10px", overflow: "hidden" }}>
         <img src="/img/dummy_img_01.jpg" alt="3D 작업완료 된 이미지" />
@@ -23,4 +23,4 @@ function Page_top_section() {
   );
 }
 
-export default Page_top_section;
+export default PageTopSection;
