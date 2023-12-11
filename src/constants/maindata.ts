@@ -59,11 +59,18 @@ export const logo = [
   { id: "11", logotitle: "로고12" },
 ];
 
-export const maincarddata = [
+export interface maincardDataType {
+  id: string;
+  subtitle: string;
+  secSubtitle: string;
+  content: string;
+  img: string;
+}
+export const maincardData: maincardDataType[] = [
   {
     id: "0",
     subtitle: "산업1",
-    subtitle2: "패션1",
+    secSubtitle: "패션1",
 
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
     img: "/img/dummy_img_01.jpg",
@@ -71,20 +78,26 @@ export const maincarddata = [
   {
     id: "1",
     subtitle: "산업2",
-    subtitle2: "패션2",
+    secSubtitle: "패션2",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
     img: "/img/dummy_img_01.jpg",
   },
   {
     id: "2",
     subtitle: "산업3",
-    subtitle2: "패션3",
+    secSubtitle: "패션3",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
     img: "/img/dummy_img_01.jpg",
   },
 ];
 
-export const mainlastsection = [
+export interface textCardType {
+  id: string;
+  title: string;
+  content: string;
+}
+
+export const mainlastsection: textCardType[] = [
   {
     id: "0",
     title: "벡터 스타터",
