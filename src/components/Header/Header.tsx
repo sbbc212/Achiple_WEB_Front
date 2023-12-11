@@ -1,4 +1,12 @@
+import Link from "next/link";
 import "./style.css";
+
+const menuItems = [
+  { text: "Studio", href: "/" },
+  { text: "Explore", href: "#", submenu: true },
+  { text: "Business", href: "#", submenu: true },
+  { text: "Pricing", href: "#" },
+];
 
 function Header() {
   return (
@@ -6,34 +14,21 @@ function Header() {
       <div className="layout">
         <nav className="h-[88px] flex justify-between items-center ">
           <div className="logo" style={{ width: "200px", cursor: "pointer" }}>
-            <a href="/">
+            <Link href="/">
               <img src="./img/logo.png" alt="아키플 스튜디오 로고" />
-            </a>
+            </Link>
           </div>
           <div className="gnb">
             <ul className="flex gap-[24px]">
-              <li>
-                <a className="text-[1rem]" href="#">
-                  Studio
-                </a>
-              </li>
-              <li>
-                <a className="text-[1rem]" href="#">
-                  Explore<i className="arrow">1</i>
-                </a>
-                <ul className="deep-menu"></ul>
-              </li>
-              <li>
-                <a className="text-[1rem]" href="#">
-                  Business<i className="arrow">1</i>
-                </a>
-                <ul className="deep-menu"></ul>
-              </li>
-              <li>
-                <a className="text-[1rem]" href="#">
-                  Pricing
-                </a>
-              </li>
+              {menuItems.map((item) => (
+                <li key={item.text}>
+                  <Link className="text-[1rem]" href={item.href}>
+                    {item.text}
+                    {item.submenu && <i className="arrow">1</i>}
+                  </Link>
+                  {item.submenu && <ul className="deep-menu"></ul>}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="user-wrap">
