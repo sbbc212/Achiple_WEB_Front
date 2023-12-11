@@ -1,5 +1,6 @@
 import React from "react";
 
+import ExampleSection from "@/components/Pageconfigurator/ExampleSection";
 import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
@@ -11,6 +12,7 @@ const page = () => {
       <PageTopSection />
       <SectionTwo />
       <SectionThree />
+      <ExampleSection />
       <TextImageCard type="imgright" />
       <TextImageCard type="imgleft" />
     </div>
