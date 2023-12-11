@@ -1,7 +1,3 @@
-import React from "react";
-
-import { mainbottom, maintext, topsection } from "@/constants/maindata";
-
 import Linebtn from "../Button/Linebtn";
 
 interface datatype {
@@ -11,21 +7,7 @@ interface datatype {
   content2: string;
   img: string;
 }
-function PageSection({ type }: { type: string }) {
-  let content: datatype[] = [];
-  switch (type) {
-    case "topsection":
-      content = topsection;
-      break;
-    case "maintop":
-      content = maintext;
-      break;
-    case "mainbottom":
-      content = mainbottom;
-      break;
-  }
-  console.log(content);
-
+function PageSection({ content }: { content: datatype[] }) {
   return (
     <div className="contant py-[60px]">
       {content.map((item, index) => (
