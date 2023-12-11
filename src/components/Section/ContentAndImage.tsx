@@ -2,10 +2,10 @@ import React from "react";
 
 import { configuratordata } from "@/constants/3dconfiguratordata";
 
-import SectionImage from "../Section/SectionImage";
-import SectionTitleAndContent from "../Section/SectionTitleAndContent";
+import SectionImage from "./SectionImage";
+import SectionTitleAndContent from "./SectionTitleAndContent";
 
-const SectionTwo = () => {
+const ContentAndImage = () => {
   return (
     <div>
       {configuratordata.map((data) => (
@@ -18,4 +18,4 @@ const SectionTwo = () => {
   );
 };
 
-export default SectionTwo;
+export default ContentAndImage;
