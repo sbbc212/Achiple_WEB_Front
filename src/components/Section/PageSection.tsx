@@ -14,7 +14,7 @@ interface datatype {
   content2: string;
   img: string;
 }
-function Page_section({ type }: { type: string }) {
+function PageSection({ type }: { type: string }) {
   let content: datatype[] = [];
   switch (type) {
     case "topsection":
@@ -27,6 +27,8 @@ function Page_section({ type }: { type: string }) {
       content = mainbottom;
       break;
   }
+  console.log(content);
+
   return (
     <div className="contant py-[60px]">
       {content.map((item, index) => (
@@ -34,7 +36,7 @@ function Page_section({ type }: { type: string }) {
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
             <SectionKeyword sectionkeyword={item.title} />
             <SectionTitleAndContent contenttitle={item.content} content={item.content2} />
-            <Linebtn />
+            <Linebtn text={""} />
           </div>
           <SectionImage sectionimg={item.img} />
         </>
@@ -43,4 +45,4 @@ function Page_section({ type }: { type: string }) {
   );
 }
 
-export default Page_section;
+export default PageSection;

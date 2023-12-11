@@ -2,8 +2,8 @@ import Full from "@/components/Banner/Full";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import Textlist from "@/components/Cardlayout/Textlist";
 import Textlist_btn from "@/components/Cardlayout/Textlist_btn";
-import Page_section from "@/components/Section/Page_section";
-import Page_top_section from "@/components/Section/Page_top_section";
+import Page_section from "@/components/Section/PageSection";
+import Page_top_section from "@/components/Section/PageTopSection";
 
 export default function Home() {
   return (
