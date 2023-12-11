@@ -6,14 +6,14 @@ import "./style.css";
 
 export interface menuType {
   text: string;
-  href: string;
+  href?: string;
   submenu?: boolean;
 }
 const menuItems: menuType[] = [
   { text: "Studio", href: "/" },
-  { text: "Explore", href: "#", submenu: true },
-  { text: "Business", href: "#", submenu: true },
-  { text: "Pricing", href: "#" },
+  { text: "Explore", submenu: true },
+  { text: "Business", submenu: true },
+  { text: "Pricing", href: "/pricing" },
 ];
 
 function Header() {
@@ -33,10 +33,17 @@ function Header() {
                   <DropdownMenu key={item.text} item={item} />
                 ) : (
                   <li key={item.text}>
-                    <Link className="text-[1rem]" href={item.href}>
-                      {item.text}
-                      {item.submenu && <i className="arrow">1</i>}
-                    </Link>
+                    {item.href ? (
+                      <Link className="text-[1rem]" href={item.href!}>
+                        {item.text}
+                        {item.submenu && <i className="arrow">1</i>}
+                      </Link>
+                    ) : (
+                      <div>
+                        {item.text}
+                        {item.submenu && <i className="arrow">1</i>}
+                      </div>
+                    )}
                   </li>
                 ),
               )}
