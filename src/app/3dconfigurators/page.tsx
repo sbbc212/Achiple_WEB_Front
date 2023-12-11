@@ -1,15 +1,16 @@
 import React from "react";
 
-import SectionTwo from "@/components/Pageconfigurator/sectiontwo";
+import SectionThree from "@/components/Pageconfigurator/SectionThree";
+import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
+import PageTopSection from "@/components/Section/PageTopSection";
 import TextImageCard from "@/components/textimagecard/TextImageCard";
-
-import Page_top_section from "@/components/Section/Page_top_section";
 
 const page = () => {
   return (
     <div className="layout">
-      <Page_top_section />
+      <PageTopSection />
       <SectionTwo />
+      <SectionThree />
       <TextImageCard type="imgright" />
       <TextImageCard type="imgleft" />
     </div>
