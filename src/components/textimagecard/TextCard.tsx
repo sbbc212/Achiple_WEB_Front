@@ -6,9 +6,9 @@ const TextCard = () => {
   return (
     <>
       {carddata.map((data) => (
-        <div className="" key={data.id}>
-          <p className="text-xl font-bold">{data.title}</p>
-          <p>{data.content}</p>
+        <div key={data.id}>
+          <p className="text-3xl leading-loose font-bold">{data.title}</p>
+          <p className="text-lg text-[#595959]">{data.content}</p>
         </div>
       ))}
     </>

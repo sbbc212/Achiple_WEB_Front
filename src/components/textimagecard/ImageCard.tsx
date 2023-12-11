@@ -1,13 +1,11 @@
 import React from "react";
 
-import Image from "next/image";
-
 import { cardimg } from "@/constants/imagecard";
 
 const ImageCard = () => {
   return (
     <>
-      <Image src={cardimg} width={400} height={200} alt="카드 이미지 임시" />
+      <img src={cardimg} className="w-[40rem] h-[20rem]" alt="카드 이미지 임시" />
     </>
   );
 };
