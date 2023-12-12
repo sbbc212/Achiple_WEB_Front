@@ -1,7 +1,9 @@
+import BgBanner from "@/components/Banner/BgBanner";
 import Full from "@/components/Banner/Full";
 import TextBanner from "@/components/Banner/TextBanner";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
+import TextCardFrame from "@/components/importFile/textCardFrame";
 import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
@@ -27,8 +29,8 @@ function ImportFile() {
   };
 
   return (
-    <div className="space-y-10">
-      <div className="layout text-center space-y-10">
+    <div className="space-y-16">
+      <div className="layout text-center space-y-32">
         <PageTopSection data={data} />
         <SectionTitleAndContent
           contenttitle={"디자인 모드에서 프로젝트 시작"}
@@ -49,9 +51,11 @@ function ImportFile() {
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
       </section>
       <TextBanner />
-      <div className="layout">
+      <section className="layout">
         <Cardlist maincardData={maincardData} btnText={"데모보기"} />
-      </div>
+        <TextCardFrame />
+      </section>
+      <BgBanner />
     </div>
   );
 }
