@@ -3,7 +3,7 @@ import Full from "@/components/Banner/Full";
 import TextBanner from "@/components/Banner/TextBanner";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
-import TextCardFrame from "@/components/importFile/textCardFrame";
+import TextCardFrame from "@/components/importFile/TextCardFrame";
 import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
