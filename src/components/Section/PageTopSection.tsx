@@ -12,7 +12,7 @@ interface PropsTypes {
 
 function PageTopSection({ data }: { data: PropsTypes }) {
   return (
-    <div className="contant">
+    <div className="layout contant">
       <div className="section-tit text-center mb-[60px]" style={{ padding: "120px 60px 0 60px" }}>
         <h3 className="text-[68px] mb-[14px]" style={{ fontWeight: "600" }}>
           {data.title}

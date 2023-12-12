@@ -1,7 +1,13 @@
-import TextCard from "@/components/Cardlayout/TextCard";
-import PageSection from "@/components/Section/PageSection";
+import Full from "@/components/Banner/Full";
+import TextBanner from "@/components/Banner/TextBanner";
+import Cardlist from "@/components/Cardlayout/Cardlist";
+import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
+import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
+import TitleImg from "@/components/titleWimg/Title.Img";
+import { textCardData } from "@/constants/importCAD.DATA";
+import { maincardData } from "@/constants/maindata";
 
 function ImportFile() {
   const data = {
@@ -11,36 +17,41 @@ function ImportFile() {
     hightlight: "다운로드나 코드가필요 하지 않습니다",
     url: "/img/dummy_img_01.jpg",
   };
+  const ImgTextData = {
+    id: "0",
+    title: "솔루션bottom",
+    content: "3D 워크플로에 필요한 모든 것bottom",
+    content2:
+      " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
+    img: "/img/dummy_img_01.jpg",
+  };
 
-  const textCardData = [
-    {
-      title: "모델만들기",
-      content: "메시 모델링 또는 프리미티브를 사용하여 나만의 3D 오브젝트를 만들어 디자인하세요. 수정자와 디포머로 가능성을 확장하세요.",
-    },
-    {
-      title: "모델만들기",
-      content: "메시 모델링 또는 프리미티브를 사용하여 나만의 3D 오브젝트를 만들어 디자인하세요. 수정자와 디포머로 가능성을 확장하세요.",
-    },
-    {
-      title: "모델만들기",
-      content: "메시 모델링 또는 프리미티브를 사용하여 나만의 3D 오브젝트를 만들어 디자인하세요. 수정자와 디포머로 가능성을 확장하세요.",
-    },
-  ];
   return (
-    <div className="layout text-center space-y-10">
-      <PageTopSection data={data} />
-      <SectionTitleAndContent
-        contenttitle={"디자인 모드에서 프로젝트 시작"}
-        content={
-          "모든 요구 사항을 충족하는 강력한 도구입니다. 씬을 설정하고, 3D 에셋을 만들거나 가져오고, 머티리얼을 조정하고, 인터랙티브 요소를 추가할 수 있습니다."
-        }
-      />
-      <div className="flex justify-between">
-        {textCardData.map((data, idx) => (
-          <TextCard key={idx} text={data} btnType={false} />
-        ))}
+    <div className="space-y-10">
+      <div className="layout text-center space-y-10">
+        <PageTopSection data={data} />
+        <SectionTitleAndContent
+          contenttitle={"디자인 모드에서 프로젝트 시작"}
+          content={
+            "모든 요구 사항을 충족하는 강력한 도구입니다. 씬을 설정하고, 3D 에셋을 만들거나 가져오고, 머티리얼을 조정하고, 인터랙티브 요소를 추가할 수 있습니다."
+          }
+        />
+        <div className="layout h-[200px] mx-auto flex justify-center">
+          <TitleImg />
+        </div>
       </div>
-      <PageSection content={[]} />
+      <Full />
+      <section className="layout">
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <PageSectionframe data={ImgTextData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+      </section>
+      <TextBanner />
+      <div className="layout">
+        <Cardlist maincardData={maincardData} btnText={"데모보기"} />
+      </div>
     </div>
   );
 }

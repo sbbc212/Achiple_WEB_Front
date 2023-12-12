@@ -1,8 +1,6 @@
-import React from "react";
-
 import { carddata } from "@/constants/imagecard";
 
-const TextCard = () => {
+const TextCardList = () => {
   return (
     <>
       {carddata.map((data) => (
@@ -15,4 +13,4 @@ const TextCard = () => {
   );
 };
 
-export default TextCard;
+export default TextCardList;

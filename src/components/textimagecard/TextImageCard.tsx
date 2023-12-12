@@ -1,7 +1,7 @@
 import React from "react";
 
 import ImageCard from "./ImageCard";
-import TextCard from "./TextCard";
+import TextCard from "./TextCardList";
 
 const TextImageCard = ({ type }: { type: string }) => {
   let layout;

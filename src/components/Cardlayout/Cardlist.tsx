@@ -1,10 +1,10 @@
-import { maincardData } from "@/constants/maindata";
-
 import Card from "./Card";
+
+import type { maincardDataType } from "@/constants/maindata";
 
 import "./style.css";
 
-function Cardlist() {
+function Cardlist({ maincardData, btnText }: { maincardData: maincardDataType[]; btnText: string }) {
   return (
     <>
       <div className="page-tit text-center py-[60px]">
@@ -12,7 +12,7 @@ function Cardlist() {
       </div>
       <ul className="flex justify-between pb-[60px]">
         {maincardData.map((cardlist, index) => (
-          <Card key={index} cardlist={cardlist} />
+          <Card key={index} cardlist={cardlist} btntext={btnText} />
         ))}
       </ul>
     </>
