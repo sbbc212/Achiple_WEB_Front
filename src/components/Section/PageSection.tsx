@@ -1,27 +1,17 @@
-import SectionImage from "./SectionImage";
-import SectionKeyword from "./SectionKeyword";
-import SectionTitleAndContent from "./SectionTitleAndContent";
-import Linebtn from "../Button/Linebtn";
-
-interface datatype {
+import PageSectionframe from "./PageSection.frame";
+export interface datatype {
   id: string;
   title: string;
   content: string;
   content2: string;
   img: string;
 }
+
 function PageSection({ content }: { content: datatype[] }) {
   return (
-    <div className="contant py-[60px]">
+    <div className="layout contant py-[60px]">
       {content.map((item, index) => (
-        <>
-          <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
-            <SectionKeyword sectionkeyword={item.title} />
-            <SectionTitleAndContent contenttitle={item.content} content={item.content2} />
-            <Linebtn text={""} />
-          </div>
-          <SectionImage sectionimg={item.img} />
-        </>
+        <PageSectionframe key={index} data={item} />
       ))}
     </div>
   );

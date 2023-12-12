@@ -1,7 +1,7 @@
 import { carddata } from "@/constants/imagecard";
 
 import ImageCard from "./ImageCard";
-import TextCard from "../Cardlayout/TextCard";
+import TextCard from "./TextCardList";
 
 const TextImageCard = ({ type }: { type: string }) => {
   switch (type) {
