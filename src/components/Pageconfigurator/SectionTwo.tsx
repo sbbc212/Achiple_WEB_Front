@@ -5,6 +5,7 @@ import { configuratordata } from "@/constants/3dconfiguratordata";
 import SectionImage from "../Section/SectionImage";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
+import "../../../public/img/dummy_img_01.jpg";
 const SectionTwo = () => {
   return (
     <div>
