@@ -1,7 +1,7 @@
 import { carddata } from "@/constants/imagecard";
 
 import ImageCard from "./ImageCard";
-import TextCard from "./TextCard";
+import TextCard from "../Cardlayout/TextCard";
 
 const TextImageCard = ({ type }: { type: string }) => {
   switch (type) {
@@ -11,7 +11,7 @@ const TextImageCard = ({ type }: { type: string }) => {
           {carddata.map((data) => (
             <>
               <ImageCard dataimg={data.img} />
-              <TextCard dataid={data.id} title={data.title} content={data.content} />
+              <TextCard lastsection={data} />
             </>
           ))}
         </div>
@@ -21,7 +21,7 @@ const TextImageCard = ({ type }: { type: string }) => {
         <div className="flex items-center pt-10 justify-center space-x-24">
           {carddata.map((data) => (
             <>
-              <TextCard dataid={data.id} title={data.title} content={data.content} />
+              <TextCard lastsection={data} />
               <ImageCard dataimg={data.img} />
             </>
           ))}
