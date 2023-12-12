@@ -56,12 +56,17 @@ export const configuratordata: ConfiguratorDataItem[] = [
         title: "3D 구성기 예 살펴보기",
         content: "",
       },
+      {
+        id: "API로 사용자 정의 옵션 확장",
+        title: "API로 사용자 정의 옵션 확장",
+        content: "",
+      },
     ],
     seccardcontent: [
       {
         id: "0",
         secsubtitle: "패션1",
-        content: "3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
+        content: "-3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
         img: "/img/dummy_img_02.jpg",
       },
       {
