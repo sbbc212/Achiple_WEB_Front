@@ -1,9 +1,7 @@
-const CardKeyword = ({ cardsubtitle }: { cardsubtitle: string }) => {
-  return (
-    <>
-      <span className="item-kerword text-[16px] mb-[14px]">{cardsubtitle}</span>
-    </>
-  );
+import React from "react";
+
+const CardKeyword = () => {
+  return <div>CardKeyword</div>;
 };
 
 export default CardKeyword;

@@ -1,3 +1,5 @@
+import React from "react";
+
 const SectionTitleAndContent = ({ contenttitle, content }: { contenttitle: string; content: string }) => {
   return (
     <>
