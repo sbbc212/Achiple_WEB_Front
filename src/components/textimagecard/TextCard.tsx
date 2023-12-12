@@ -1,14 +1,10 @@
-import { carddata } from "@/constants/imagecard";
-
-const TextCard = () => {
+const TextCard = ({ dataid, title, content }: { dataid: string; title: string; content: string }) => {
   return (
     <>
-      {carddata.map((data) => (
-        <div key={data.id}>
-          <p className="text-3xl leading-loose font-bold">{data.title}</p>
-          <p className="text-lg text-[#595959]">{data.content}</p>
-        </div>
-      ))}
+      <div key={dataid}>
+        <p className="text-3xl leading-loose font-bold">{title}</p>
+        <p className="text-lg text-[#595959]">{content}</p>
+      </div>
     </>
   );
 };

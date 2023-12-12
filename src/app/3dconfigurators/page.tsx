@@ -1,9 +1,9 @@
 import SectionCard from "@/components/Pageconfigurator/SectionCard";
 import SectionFive from "@/components/Pageconfigurator/SectionFive";
+import SectionSix from "@/components/Pageconfigurator/SectionSix";
 import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-import TextImageCard from "@/components/textimagecard/TextImageCard";
 
 const page = () => {
   return (
@@ -13,8 +13,7 @@ const page = () => {
       <SectionThree />
       <SectionCard />
       <SectionFive />
-      <TextImageCard type="imgright" />
-      <TextImageCard type="imgleft" />
+      <SectionSix />
     </div>
   );
 };

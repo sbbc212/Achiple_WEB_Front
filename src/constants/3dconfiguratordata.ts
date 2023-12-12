@@ -61,6 +61,11 @@ export const configuratordata: ConfiguratorDataItem[] = [
         title: "API로 사용자 정의 옵션 확장",
         content: "",
       },
+      {
+        id: "section6",
+        title: "Vectary 성공 사례에서 영감을 얻으세요",
+        content: "",
+      },
     ],
     seccardcontent: [
       {
