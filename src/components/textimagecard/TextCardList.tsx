@@ -1,4 +1,4 @@
-const TextCard = ({ dataid, title, content }: { dataid: string; title: string; content: string }) => {
+const TextCardList = ({ dataid, title, content }: { dataid: string; title: string; content: string }) => {
   return (
     <>
       <div key={dataid}>
@@ -9,4 +9,4 @@ const TextCard = ({ dataid, title, content }: { dataid: string; title: string; c
   );
 };
 
-export default TextCard;
+export default TextCardList;

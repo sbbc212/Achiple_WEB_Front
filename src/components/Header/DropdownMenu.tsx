@@ -57,7 +57,7 @@ const explore: MenuProps = {
     {
       key: "7",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/importfile">
           캐드 가져오기
         </Link>
       ),
