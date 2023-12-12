@@ -1,7 +1,11 @@
-import React from "react";
+import SectionThree from "@/components/Pageconfigurator/SectionThree";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <SectionThree />
+    </div>
+  );
 };
 
 export default page;

@@ -1,11 +1,7 @@
-import React from "react";
-
-import { cardimg } from "@/constants/imagecard";
-
-const ImageCard = () => {
+const ImageCard = ({ dataimg }: { dataimg: string }) => {
   return (
     <>
-      <img src={cardimg} className="w-[40rem] h-[20rem]" alt="카드 이미지 임시" />
+      <img src={dataimg} className="w-[40rem] h-[20rem]" alt="카드 이미지 임시" />
     </>
   );
 };

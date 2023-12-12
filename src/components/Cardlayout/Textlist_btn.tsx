@@ -1,5 +1,3 @@
-import React from "react";
-
 import { mainlastsection } from "@/constants/maindata";
 
 import TextCard from "./TextCard";

@@ -1,29 +1,33 @@
-import React from "react";
+import { carddata } from "@/constants/imagecard";
 
 import ImageCard from "./ImageCard";
 import TextCard from "./TextCardList";
 
 const TextImageCard = ({ type }: { type: string }) => {
-  let layout;
   switch (type) {
     case "imgleft":
-      layout = (
-        <>
-          <ImageCard />
-          <TextCard />
-        </>
+      return (
+        <div className="flex items-center pt-10 justify-center space-x-24">
+          {carddata.map((data) => (
+            <>
+              <ImageCard dataimg={data.img} />
+              <TextCard dataid={data.id} title={data.title} content={data.content} />
+            </>
+          ))}
+        </div>
       );
-      break;
     case "imgright":
-      layout = (
-        <>
-          <TextCard />
-          <ImageCard />
-        </>
+      return (
+        <div className="flex items-center pt-10 justify-center space-x-24">
+          {carddata.map((data) => (
+            <>
+              <TextCard dataid={data.id} title={data.title} content={data.content} />
+              <ImageCard dataimg={data.img} />
+            </>
+          ))}
+        </div>
       );
-      break;
   }
-  return <div className="flex items-center pt-10 justify-center space-x-24">{layout}</div>;
 };
 
 export default TextImageCard;

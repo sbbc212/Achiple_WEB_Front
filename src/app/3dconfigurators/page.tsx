@@ -1,8 +1,9 @@
-import React from "react";
-
+import SectionCard from "@/components/Pageconfigurator/SectionCard";
+import SectionFive from "@/components/Pageconfigurator/SectionFive";
+import SectionSix from "@/components/Pageconfigurator/SectionSix";
+import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-import TextImageCard from "@/components/textimagecard/TextImageCard";
 
 const page = () => {
   const data = {
@@ -16,8 +17,10 @@ const page = () => {
     <div className="layout">
       <PageTopSection data={data} />
       <SectionTwo />
-      <TextImageCard type="imgright" />
-      <TextImageCard type="imgleft" />
+      <SectionThree />
+      <SectionCard />
+      <SectionFive />
+      <SectionSix />
     </div>
   );
 };
