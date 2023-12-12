@@ -18,19 +18,25 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a className="text-[1rem]" href="#">
-                  Explore<i className="arrow">1</i>
+                <a className="text-[1rem] flex items-center gap-1" href="#">
+                  Explore
+                  <i className="arrow">
+                    <img src="img/Vector_arrow.png" alt="화살표" />
+                  </i>
                 </a>
                 <ul className="deep-menu"></ul>
               </li>
               <li>
-                <a className="text-[1rem]" href="#">
-                  Business<i className="arrow">1</i>
+                <a className="text-[1rem] flex items-center gap-1" href="#">
+                  Business
+                  <i className="arrow">
+                    <img src="img/Vector_arrow.png" alt="화살표" />
+                  </i>
                 </a>
                 <ul className="deep-menu"></ul>
               </li>
               <li>
-                <a className="text-[1rem]" href="#">
+                <a className="text-[1rem]" href="/Pricing">
                   Pricing
                 </a>
               </li>
