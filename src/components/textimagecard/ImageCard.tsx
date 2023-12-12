@@ -1,5 +1,3 @@
-import React from "react";
-
 import { cardimg } from "@/constants/imagecard";
 
 const ImageCard = () => {

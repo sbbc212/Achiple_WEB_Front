@@ -1,5 +1,3 @@
-import React from "react";
-
 const CardImage = ({ cardImg }: { cardImg: string }) => {
   return (
     <>

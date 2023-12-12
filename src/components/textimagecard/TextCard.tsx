@@ -1,5 +1,3 @@
-import React from "react";
-
 import { carddata } from "@/constants/imagecard";
 
 const TextCard = () => {
