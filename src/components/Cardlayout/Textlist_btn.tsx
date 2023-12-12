@@ -12,7 +12,7 @@ function Textlist_btn() {
       </div>
       <ul className="flex justify-between pb-[60px]">
         {mainlastsection.map((lastsection) => (
-          <TextCard key={lastsection.id} lastsection={lastsection} />
+          <TextCard key={lastsection.id} text={lastsection} btnType={true} />
         ))}
       </ul>
     </div>

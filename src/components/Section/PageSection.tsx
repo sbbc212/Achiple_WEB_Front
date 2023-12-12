@@ -18,7 +18,7 @@ function PageSection({ content }: { content: datatype[] }) {
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
             <SectionKeyword sectionkeyword={item.title} />
             <SectionTitleAndContent contenttitle={item.content} content={item.content2} />
-            <Linebtn text={""} />
+            <Linebtn text={"지금 시작해보세요."} />
           </div>
           <SectionImage sectionimg={item.img} />
         </>
