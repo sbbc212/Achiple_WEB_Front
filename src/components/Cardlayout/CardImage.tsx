@@ -1,9 +1,7 @@
-const CardImage = ({ cardImg }: { cardImg: string }) => {
-  return (
-    <>
-      <img className="card-img rounded-3xl" src={cardImg} alt="더미데이터" />
-    </>
-  );
+import React from "react";
+
+const CardImage = () => {
+  return <div>CardImage</div>;
 };
 
 export default CardImage;

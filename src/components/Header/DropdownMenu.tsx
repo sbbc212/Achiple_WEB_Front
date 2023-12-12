@@ -57,7 +57,7 @@ const explore: MenuProps = {
     {
       key: "7",
       label: (
-        <Link rel="noopener noreferrer" href="/importfile">
+        <Link rel="noopener noreferrer" href="/">
           캐드 가져오기
         </Link>
       ),
@@ -91,9 +91,13 @@ function DropdownMenu({ item }: { item: menuType }) {
   return (
     <Dropdown key={item.text} menu={items} placement="bottom" arrow>
       <li className="my-auto cursor-pointer">
-        <div className="text-[1rem]">
+        <div className="text-[1rem] flex items-center gap-2">
           {item.text}
-          {item.submenu && <i className="arrow">1</i>}
+          {item.submenu && (
+            <i className="arrow">
+              <img src="/img/Vector_arrow.png" alt="" />
+            </i>
+          )}
         </div>
       </li>
     </Dropdown>

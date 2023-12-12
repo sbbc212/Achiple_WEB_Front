@@ -1,9 +1,7 @@
-const CardTitle = ({ cardtitle }: { cardtitle: string }) => {
-  return (
-    <>
-      <span className="block font-bold text-[24px] mb-[26px]">{cardtitle}</span>
-    </>
-  );
+import React from "react";
+
+const CardTitle = () => {
+  return <div>CardTitle</div>;
 };
 
 export default CardTitle;
