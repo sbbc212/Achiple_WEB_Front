@@ -15,6 +15,9 @@
 
 }
 
+.option>ul {
+    padding: 1rem 0;
+}
 
 .option>ul>li>span {
     padding: 0.45rem 0;

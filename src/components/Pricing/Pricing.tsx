@@ -93,7 +93,7 @@ function Pricing({ data }: { data: tabData }) {
           </div>
         </li>
       </ul>
-      <span className="text-center block pt-[24px] pb-[60px]">
+      <span className="text-center block pt-[12px] pb-[60px]">
         Workspace 요금제 구독은 취소하지 않는 한 각 결제 주기가 끝날 때 자동으로 갱신됩니다. 서비스 약관을 참조하세요 .
       </span>
     </div>

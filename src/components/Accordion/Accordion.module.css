@@ -17,6 +17,12 @@
     padding: 20px;
 }
 
-.red {
-    background-color: red;
+.bordHeader {
+    border-left: none;
+    border-right: none;
+}
+
+.bordTitle {
+    color: #191919;
+    font-size: 14px;
 }
