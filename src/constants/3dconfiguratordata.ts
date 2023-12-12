@@ -7,12 +7,19 @@ export interface TextDataItem {
   btntext?: string;
   img?: string;
 }
+export interface SecCardContent {
+  id: string;
+  secsubtitle: string;
+  content: string;
+  img: string;
+}
 
 export interface ConfiguratorDataItem {
   id: string;
   pagename: string;
   textdata: TextDataItem[];
   cardcontent: maincardDataType[];
+  seccardcontent: SecCardContent[];
 }
 export const configuratordata: ConfiguratorDataItem[] = [
   {
@@ -48,6 +55,26 @@ export const configuratordata: ConfiguratorDataItem[] = [
         id: "3D 구성기 예 살펴보기",
         title: "3D 구성기 예 살펴보기",
         content: "",
+      },
+    ],
+    seccardcontent: [
+      {
+        id: "0",
+        secsubtitle: "패션1",
+        content: "3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
+        img: "/img/dummy_img_02.jpg",
+      },
+      {
+        id: "1",
+        secsubtitle: "패션2",
+        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+        img: "/img/dummy_img_02.jpg",
+      },
+      {
+        id: "2",
+        secsubtitle: "패션3",
+        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+        img: "/img/dummy_img_02.jpg",
       },
     ],
     cardcontent: [
