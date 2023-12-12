@@ -8,7 +8,7 @@ import type { textCardType } from "@/constants/maindata";
 
 function ImgAndTextCard({ ImgTextData, textCardData }: { ImgTextData: datatype; textCardData: textCardType[] }) {
   return (
-    <div>
+    <div className="space-y-10">
       <PageSectionframe data={ImgTextData} />
       <TextCardList textCardData={textCardData} />
     </div>
