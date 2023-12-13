@@ -1,5 +1,5 @@
-import SectionCard from "@/components/Pageconfigurator/SectionCard";
 import SectionFive from "@/components/Pageconfigurator/SectionFive";
+import SectionFour from "@/components/Pageconfigurator/SectionFour";
 import SectionSix from "@/components/Pageconfigurator/SectionSix";
 import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
@@ -18,8 +18,8 @@ const page = () => {
       <PageTopSection data={data} />
       <SectionTwo />
       <SectionThree />
-      <SectionCard />
       <SectionFive />
+      <SectionFour />
       <SectionSix />
     </div>
   );
