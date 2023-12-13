@@ -9,7 +9,7 @@ const TextImageCard = ({ datatype }: { datatype: string }) => {
       {carddata.map((data) => (
         <div key={data.title} className={`${datatype === data.type ? "flex" : "flex flex-row-reverse"} items-center pt-10 justify-center space-x-24`}>
           <ImageCard dataimg={data.img} />
-          <TextCard text={data} btnType={false} btnText={""} />
+          <TextCard lastsection={data} />
         </div>
       ))}
     </div>

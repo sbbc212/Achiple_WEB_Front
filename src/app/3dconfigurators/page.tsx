@@ -2,7 +2,6 @@ import React from "react";
 
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-
 import TextImageCard from "@/components/textimagecard/TextImageCard";
 
 const page = () => {
@@ -10,8 +9,8 @@ const page = () => {
     <div className="layout">
       <PageTopSection />
       <SectionTwo />
-      <TextImageCard type="imgright" />
-      <TextImageCard type="imgleft" />
+      <TextImageCard datatype={""} />
+      <TextImageCard datatype={""} />
     </div>
   );
 };
