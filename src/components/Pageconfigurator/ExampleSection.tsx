@@ -1,3 +1,5 @@
+import React from "react";
+
 import { configuratordata } from "@/constants/3dconfiguratordata";
 
 import Card from "../Cardlayout/Card";

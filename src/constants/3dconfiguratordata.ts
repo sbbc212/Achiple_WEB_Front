@@ -6,12 +6,7 @@ export interface TextDataItem {
   content: string;
   btntext?: string;
   img?: string;
-}
-export interface SecCardContent {
-  id: string;
-  secsubtitle: string;
-  content: string;
-  img: string;
+  datatype?: string;
 }
 
 export interface ConfiguratorDataItem {
@@ -19,7 +14,6 @@ export interface ConfiguratorDataItem {
   pagename: string;
   textdata: TextDataItem[];
   cardcontent: maincardDataType[];
-  seccardcontent: SecCardContent[];
 }
 export const configuratordata: ConfiguratorDataItem[] = [
   {
@@ -31,6 +25,7 @@ export const configuratordata: ConfiguratorDataItem[] = [
         title: "나만의 3D 구성 프로그램 만들기",
         content: "코드가 없습니다. Vectary에서 미리 만들어진 요소로 UI를 설정합니다. 메뉴, 기능 및 트리거를 디자인합니다. 몇 분 안에 준비됩니다.",
         btntext: "30일 무료 평가판을 시작하세요",
+        datatype: "imgleft",
       },
       {
         id: "section2",
@@ -38,6 +33,7 @@ export const configuratordata: ConfiguratorDataItem[] = [
         content:
           "아이디어부터 최종 컨셉까지 모든 제품 버전을 웹에 표시합니다. 시청자의 관심을 사로잡고 메인 쇼케이스를 가리지 않으면서 다양한 정보를 공개하세요. 맞춤형 브랜딩을 추가하세요. 채팅에서 열거나 온라인 어디든 삽입할 수 있는 하나의 링크를 보내 공유하세요.1",
         img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f711f1f9709d68d9de08de_bag%20-%203d%20configurator%20vectary-p-2000.jpeg",
+        datatype: "imgleft",
       },
       {
         id: "section3",
@@ -45,6 +41,7 @@ export const configuratordata: ConfiguratorDataItem[] = [
         content:
           "아이디어부터 최종 컨셉까지 모든 제품 버전을 웹에 표시합니다. 시청자의 관심을 사로잡고 메인 쇼케이스를 가리지 않으면서 다양한 정보를 공개하세요. 맞춤형 브랜딩을 추가하세요. 채팅에서 열거나 온라인 어디든 삽입할 수 있는 하나의 링크를 보내 공유하세요.",
         img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f711f1f9709d68d9de08de_bag%20-%203d%20configurator%20vectary-p-2000.jpeg",
+        datatype: "imgleft",
       },
       {
         id: "04",
@@ -56,36 +53,6 @@ export const configuratordata: ConfiguratorDataItem[] = [
         title: "3D 구성기 예 살펴보기",
         content: "",
       },
-      {
-        id: "API로 사용자 정의 옵션 확장",
-        title: "API로 사용자 정의 옵션 확장",
-        content: "",
-      },
-      {
-        id: "section6",
-        title: "Vectary 성공 사례에서 영감을 얻으세요",
-        content: "",
-      },
-    ],
-    seccardcontent: [
-      {
-        id: "0",
-        secsubtitle: "패션1",
-        content: "-3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
-        img: "/img/dummy_img_02.jpg",
-      },
-      {
-        id: "1",
-        secsubtitle: "패션2",
-        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-        img: "/img/dummy_img_02.jpg",
-      },
-      {
-        id: "2",
-        secsubtitle: "패션3",
-        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-        img: "/img/dummy_img_02.jpg",
-      },
     ],
     cardcontent: [
       {
@@ -93,24 +60,42 @@ export const configuratordata: ConfiguratorDataItem[] = [
         subtitle: "산업1",
         secSubtitle: "패션1",
         content: "3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
-        img: "/img/dummy_img_02.jpg",
-        btntext: "데모보기1",
+        img: "/img/dummy_img_01.jpg",
       },
       {
         id: "1",
         subtitle: "산업2",
         secSubtitle: "패션2",
         content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-        img: "/img/dummy_img_02.jpg",
-        btntext: "데모보기2",
+        img: "/img/dummy_img_01.jpg",
       },
       {
         id: "2",
         subtitle: "산업3",
         secSubtitle: "패션3",
         content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-        img: "/img/dummy_img_02.jpg",
-        btntext: "데모보기",
+        img: "/img/dummy_img_01.jpg",
+      },
+      {
+        id: "4",
+        subtitle: "산업4",
+        secSubtitle: "패션1",
+        content: "3D 구성기는 추가 정보를 제공하고 모듈식 부품을 제시할 수 있습니다.",
+        img: "/img/dummy_img_01.jpg",
+      },
+      {
+        id: "5",
+        subtitle: "산업",
+        secSubtitle: "패션2",
+        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+        img: "/img/dummy_img_01.jpg",
+      },
+      {
+        id: "6",
+        subtitle: "산업3",
+        secSubtitle: "패션3",
+        content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+        img: "/img/dummy_img_01.jpg",
       },
     ],
   },

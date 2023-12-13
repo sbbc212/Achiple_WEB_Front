@@ -6,9 +6,11 @@ import TextImageCard from "../textimagecard/TextImageCard";
 const SectionFive = () => (
   <>
     {configuratordata.map((data) => (
-      <SectionTitleAndContent key={data.id} contenttitle={data.textdata[5].title} content="" />
+      <>
+        <SectionTitleAndContent key={data.id} contenttitle={data.textdata[5].title} content="" />
+        <TextImageCard datatype={data.textdata[2].datatype || ""} />
+      </>
     ))}
-    <TextImageCard type="imgright" />
   </>
 );
 

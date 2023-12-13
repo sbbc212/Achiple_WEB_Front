@@ -7,10 +7,11 @@ const SectionSix = () => {
   return (
     <div>
       {configuratordata.map((data) => (
-        <SectionTitleAndContent key={data.id} contenttitle={data.textdata[6].title} content="" />
+        <>
+          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[6].title} content="" />
+          <TextImageCard datatype={data.textdata[2].datatype || ""} />
+        </>
       ))}
-      <TextImageCard type="imgright" />
-      <TextImageCard type="imgleft" />
     </div>
   );
 };
