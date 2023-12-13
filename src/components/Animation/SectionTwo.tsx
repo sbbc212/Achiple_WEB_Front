@@ -8,7 +8,9 @@ const SectionTwo = () => {
     <div>
       {configuratordata.map((data) => (
         <>
-          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[5].title} content={data.textdata[3].content} />
+          <div className="pt-9">
+            <SectionTitleAndContent key={data.id} contenttitle={data.textdata[5].title} content={data.textdata[3].content} />
+          </div>
           <TextImageCard datatype={data.textdata[1].datatype || ""} />
           <TextImageCard datatype={data.textdata[2].datatype || ""} />
           <TextImageCard datatype={data.textdata[1].datatype || ""} />
