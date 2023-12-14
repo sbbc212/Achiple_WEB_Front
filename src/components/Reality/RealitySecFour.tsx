@@ -2,10 +2,10 @@ import React from "react";
 
 import { configuratordata } from "@/constants/3dconfiguratordata";
 
-import SectionCard from "./SectionCard";
+import SectionCard from "../Pageconfigurator/SectionCard";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
-const SectionThree = () => {
+const RealitySecFour = () => {
   return (
     <>
       {configuratordata.map((data) => {
@@ -20,4 +20,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default RealitySecFour;

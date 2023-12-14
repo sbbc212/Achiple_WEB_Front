@@ -6,6 +6,7 @@ export const topsection = [
     content2:
       " 아키플 스튜디오는 제품 개념을 완전한 경험으로 전환하기 위해 만들어진 고품질 실시간 렌더링, 상호 작용, 애니메이션, 수많은 사전 설정 및 기타 전문 기능을 빠르게 제공합니다.",
     img: "/img/dummy_img_01.jpg",
+    bt__text: "상호 작용 및 애니메이션에 대해 알아보기",
   },
   {
     id: "1",
@@ -14,6 +15,7 @@ export const topsection = [
     content2:
       " 놀랍고 대화를 시작하는 몰입형 경험을 만들기 위한 한 단계는 3D 창작물을 증강 현실로 전환하는 것입니다. 자신의 파일을 가져오거나 자신만의 모델을 구축해 보세요. 다른 앱은 필요하지 않으며 데스크톱이나 휴대폰에서 작동됩니다. ",
     img: "/img/dummy_img_01.jpg",
+    bt__text: "증강 현실 기능 설명",
   },
   {
     id: "2",
@@ -22,6 +24,8 @@ export const topsection = [
     content2:
       " 파일 전송이나 이메일 첨부는 잊어버리세요. 링크 하나만 있으면 됩니다. 파일을 가져오기만 하면 클릭 한 번으로 AR 안경을 포함한 모든 장치에서 볼 수 있도록 3D 콘텐츠에 완벽하게 액세스할 수 있습니다.",
     img: "/img/dummy_img_01.jpg",
+    link__text: "사용해 보세요. 링크를 복사하여 온라인 생산성 도구, 프레젠테이션 또는 채팅에 추가하세요.",
+    bt__text: "링크복사",
   },
 ];
 export const maintext = [
@@ -32,6 +36,7 @@ export const maintext = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
+    bt__text: "아키플 스튜디오 워크플로 설명",
   },
 ];
 export const mainbottom = [
@@ -42,6 +47,7 @@ export const mainbottom = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
+    bt__text: "더 많은 비즈니스 솔루션을 찾아보세요",
   },
 ];
 export const logo = [
@@ -97,8 +103,32 @@ export interface textCardType {
   content: string;
   bt__text: string;
 }
+export const data = [
+  {
+    title: "대화형 3D 및 AR로 작업 완료",
+    content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+    btnContent: "지금 시작해보세요.",
+    hightlight: "다운로드나 코드가필요 하지 않습니다",
+    url: "/img/dummy_img_01.jpg",
+  },
+  {
+    title: "Web AR로 몰입도 높고 매력적인 경험 구축",
+    content:
+      "3D 및 증강 현실 플랫폼인 Vectary를 통해 비전을 판매하고 디자인을 향상시키며 새로운 시각적 참여를 제공하세요.보기 위해 앱을 다운로드하거나 설치할 필요가 없습니다. 스마트폰이나 AR글래스를 이용하면 됩니다.",
+    btnContent: "지금 시작해보세요.",
+    hightlight: "다운로드나 코드가필요 하지 않습니다",
+    url: "/img/dummy_img_01.jpg",
+  },
+  {
+    title: "대화형 3D 및 AR로 작업 완료3",
+    content: "영감을 주고, 교육하고333, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+    btnContent: "지금 시작해보세요.",
+    hightlight: "다운로드나 코드가필요 하지 않습니다",
+    url: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f71f53756e20f012266ad8_Case%20study%20beflo.png",
+  },
+];
 
-export const mainlastsection: textCardType[] = [
+export const mainlastsection = [
   {
     id: "0",
     title: "벡터 스타터",

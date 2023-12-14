@@ -1,16 +1,19 @@
-import React from "react";
-
+import SectionFive from "@/components/Pageconfigurator/SectionFive";
+import SectionFour from "@/components/Pageconfigurator/SectionFour";
+import SectionSix from "@/components/Pageconfigurator/SectionSix";
+import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-import TextImageCard from "@/components/textimagecard/TextImageCard";
 
 const page = () => {
   return (
     <div className="layout">
       <PageTopSection />
       <SectionTwo />
-      <TextImageCard datatype={""} />
-      <TextImageCard datatype={""} />
+      <SectionThree />
+      <SectionFive />
+      <SectionFour />
+      <SectionSix />
     </div>
   );
 };
