@@ -17,7 +17,7 @@ const explore: MenuProps = {
     {
       key: "2",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/animation">
           워크스루 & 애니메이션
         </Link>
       ),
@@ -25,7 +25,7 @@ const explore: MenuProps = {
     {
       key: "3",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/reality">
           증강 현실
         </Link>
       ),
@@ -41,7 +41,7 @@ const explore: MenuProps = {
     {
       key: "5",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/3dconfigurators">
           3D Configurators
         </Link>
       ),

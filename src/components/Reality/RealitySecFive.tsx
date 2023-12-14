@@ -1,7 +1,13 @@
-import React from "react";
-
+import RealityTextCard from "./RealityTextCard";
+import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 const RealitySecFive = () => {
-  return <div>RealitySecFive</div>;
+  return (
+    <>
+      <SectionTitleAndContent contenttitle={""} content={""} />
+      <RealityTextCard />
+      <RealityTextCard />
+    </>
+  );
 };
 
 export default RealitySecFive;

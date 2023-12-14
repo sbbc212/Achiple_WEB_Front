@@ -1,7 +1,13 @@
-import React from "react";
+import { maintext } from "@/constants/maindata";
+
+import PageSection from "../Section/PageSection";
 
 const RealitySecThree = () => {
-  return <div>RealitySecThree</div>;
+  return (
+    <>
+      <PageSection content={maintext} />
+    </>
+  );
 };
 
 export default RealitySecThree;
