@@ -1,3 +1,5 @@
+import React from "react";
+
 import { mainlastsection } from "@/constants/maindata";
 
 import TextCard from "./TextCard";
@@ -11,7 +13,7 @@ function Textlist_btn() {
 
       <ul className="flex justify-between pb-[60px]">
         {mainlastsection.map((lastsection) => (
-          <TextCard key={lastsection.id} text={lastsection} btnType={true} btnText={""} />
+          <TextCard lastsection={lastsection} key={lastsection.id} />
         ))}
       </ul>
     </div>

@@ -1,3 +1,5 @@
+import React from "react";
+
 const SectionTitleAndContent = ({ contenttitle, content }: { contenttitle: string; content: string }) => {
   return (
     <div className="section-tit" style={{ padding: "30px 60px 0 60px" }}>

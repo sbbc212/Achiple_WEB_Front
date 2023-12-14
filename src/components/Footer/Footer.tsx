@@ -1,4 +1,3 @@
-import { footerdata } from "@/constants/footer";
 import "./style.css";
 
 function Footer() {
@@ -12,31 +11,82 @@ function Footer() {
             </span>
             <ul>
               <li>
-                <a className="text-[#949494]" href="#">
+                <a className="text-[#949494] text-[14px]" href="#">
                   가격
                 </a>
               </li>
               <li>
-                <a className="text-[#949494]" href="#">
+                <a className="text-[#949494] text-[14px]" href="#">
                   문의
                 </a>
               </li>
             </ul>
           </div>
-          {footerdata.map((data, index) => (
-            <div key={index} className="w-[15%]">
-              <span className="block text-white text-[22px] font-light mb-[18px]">{data.tab}</span>
-              <ul>
-                {data.title.map((datatitle) => (
-                  <li key={datatitle.id}>
-                    <a className="text-[#949494]" href="#">
-                      {datatitle.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="w-[15%]">
+            <span className="block text-white text-[22px] font-light mb-[18px]">Explore</span>
+            <ul>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  아키플스튜디오
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  워크스루 & 애니메이션
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  증강 현실
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  3D Configurators
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  공유
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  캐드 가져오기
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="w-[15%]">
+            <span className="block text-white text-[22px] font-light mb-[18px]">Business</span>
+            <ul>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  고객지원
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  작업순서
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="w-[15%]">
+            <span className="block text-white text-[22px] font-light mb-[18px]">Industries</span>
+            <ul>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  인테리어
+                </a>
+              </li>
+              <li>
+                <a className="text-[#949494] text-[14px]" href="#">
+                  디자인 대행
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

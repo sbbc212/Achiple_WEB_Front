@@ -65,37 +65,34 @@ export interface maincardDataType {
   secSubtitle: string;
   content: string;
   img: string;
-  btntext: string;
 }
 export const maincardData: maincardDataType[] = [
   {
     id: "0",
     subtitle: "산업1",
     secSubtitle: "패션1",
+
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
-    btntext: "데모보기1",
+    img: "/img/dummy_img_01.jpg",
   },
   {
     id: "1",
     subtitle: "산업2",
     secSubtitle: "패션2",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
-    btntext: "데모보기2",
+    img: "/img/dummy_img_01.jpg",
   },
   {
     id: "2",
     subtitle: "산업3",
     secSubtitle: "패션3",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
-    btntext: "데모보기3",
+    img: "/img/dummy_img_01.jpg",
   },
 ];
 
 export interface textCardType {
-  id?: string;
+  id: string;
   title: string;
   content: string;
 }
@@ -160,6 +157,27 @@ export const main = [
   {
     id: "2",
     title: "협동3",
+    content:
+      "시간과 노력을 절약해 주는 실용적인 기능. 모든 장치에서 프로젝트에 쉽게 액세스할 수 있습니다. 파일 복제, 디자인 시스템 옵션, 사용자 정의 라이브러리 및 전체 3D 장면을 프레젠테이션 또는 생산성 도구에 쉽게 포함할 수 있습니다.",
+  },
+];
+
+export const pricing = [
+  {
+    id: "0",
+    rating: "Starter",
+    content:
+      "시간과 노력을 절약해 주는 실용적인 기능. 모든 장치에서 프로젝트에 쉽게 액세스할 수 있습니다. 파일 복제, 디자인 시스템 옵션, 사용자 정의 라이브러리 및 전체 3D 장면을 프레젠테이션 또는 생산성 도구에 쉽게 포함할 수 있습니다.",
+  },
+  {
+    id: "1",
+    rating: "Pro",
+    content:
+      "시간과 노력을 절약해 주는 실용적인 기능. 모든 장치에서 프로젝트에 쉽게 액세스할 수 있습니다. 파일 복제, 디자인 시스템 옵션, 사용자 정의 라이브러리 및 전체 3D 장면을 프레젠테이션 또는 생산성 도구에 쉽게 포함할 수 있습니다.",
+  },
+  {
+    id: "2",
+    rating: "Business",
     content:
       "시간과 노력을 절약해 주는 실용적인 기능. 모든 장치에서 프로젝트에 쉽게 액세스할 수 있습니다. 파일 복제, 디자인 시스템 옵션, 사용자 정의 라이브러리 및 전체 3D 장면을 프레젠테이션 또는 생산성 도구에 쉽게 포함할 수 있습니다.",
   },

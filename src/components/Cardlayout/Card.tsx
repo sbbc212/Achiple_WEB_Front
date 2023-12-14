@@ -2,7 +2,7 @@ import Linebtn from "../Button/Linebtn";
 
 import type { maincardDataType } from "@/constants/maindata";
 
-function Card({ cardlist, btntext }: { cardlist: maincardDataType; btntext: string }) {
+function Card({ cardlist }: { cardlist: maincardDataType }) {
   return (
     <li className="card-list-item">
       <img className="rounded-2xl" src={cardlist.img} alt="dummy" />
@@ -10,7 +10,7 @@ function Card({ cardlist, btntext }: { cardlist: maincardDataType; btntext: stri
         <span className="item-kerword text-[16px] mb-[14px]">{cardlist.subtitle}</span>
         <span className="block font-bold text-[24px] mb-[26px]">{cardlist.secSubtitle}</span>
         <p className=" mb-[20px]">{cardlist.content}</p>
-        <Linebtn text={btntext} />
+        <Linebtn text="" />
       </div>
     </li>
   );
