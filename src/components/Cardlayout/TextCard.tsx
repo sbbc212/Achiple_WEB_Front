@@ -8,7 +8,7 @@ function TextCard({ lastsection }: { lastsection: textCardType }) {
       <li className="card-list-item">
         <span className=" block font-bold text-[18px] mb-[20px]">{lastsection?.title}</span>
         <p className="my-[20px]">{lastsection?.content}</p>
-        <Linebtn text="" />
+        <Linebtn text="둘러보기" />
       </li>
     </>
   );
