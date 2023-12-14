@@ -14,7 +14,7 @@ function PageTopSection() {
           <span style={{ fontWeight: "700" }}>다운로드나 코드가</span>
           필요 하지 않습니다
         </p>
-        <Fillbtn text="" />
+        <Fillbtn text="30일 무료 평가판을 시작하세요" />
       </div>
       <div className="card-img-wrap" style={{ width: "100%", height: "auto", borderRadius: "10px", overflow: "hidden" }}>
         <img src="/img/dummy_img_01.jpg" alt="3D 작업완료 된 이미지" />

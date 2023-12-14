@@ -121,7 +121,7 @@ export const data = [
   },
 ];
 
-export const mainlastsection: textCardType[] = [
+export const mainlastsection = [
   {
     id: "0",
     title: "벡터 스타터",
