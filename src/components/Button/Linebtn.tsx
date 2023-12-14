@@ -1,5 +1,9 @@
 function Fillbtn({ text }: { text: string }) {
-  return <button style={{ padding: "12px 24px", border: "1px solid #2aa86b", borderRadius: "6px", color: "#2aa86b", fontWeight: "500" }}>{text}</button>;
+  return (
+    <button style={{ padding: "8px 16px", border: "1px solid #2aa86b", borderRadius: "4px", color: "#2aa86b", fontWeight: "500", fontSize: "14px" }}>
+      {text}
+    </button>
+  );
 }
 
 export default Fillbtn;
