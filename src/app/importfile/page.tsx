@@ -7,16 +7,9 @@ import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
 import TitleImg from "@/components/titleWimg/Title.Img";
 import { textCardData } from "@/constants/importCAD.DATA";
-import { maincardData } from "@/constants/maindata";
+import { data, maincardData } from "@/constants/maindata";
 
 function ImportFile() {
-  const data = {
-    title: "캐드가져오기 페이지",
-    content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
-    btnContent: "지금 시작해보세요.",
-    hightlight: "다운로드나 코드가필요 하지 않습니다",
-    url: "/img/dummy_img_01.jpg",
-  };
   const ImgTextData = {
     id: "0",
     title: "솔루션bottom",
@@ -29,7 +22,7 @@ function ImportFile() {
   return (
     <div className="space-y-10">
       <div className="layout text-center space-y-10">
-        <PageTopSection data={data} />
+        <PageTopSection data={data[0]} />
         <SectionTitleAndContent
           contenttitle={"디자인 모드에서 프로젝트 시작"}
           content={

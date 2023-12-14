@@ -7,7 +7,7 @@ import { data } from "@/constants/maindata";
 const page = () => {
   return (
     <div className="layout">
-      <PageTopSection data={data} />
+      <PageTopSection data={data[1]} />
       <SectionTwo />
       <SectionThree />
       <SectionFour />

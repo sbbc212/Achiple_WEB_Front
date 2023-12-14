@@ -5,14 +5,14 @@ import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
 const SectionTwo = () => {
   return (
-    <div>
+    <>
       {configuratordata.map((data) => (
         <div key={data.id} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
           <SectionTitleAndContent key={data.id} contenttitle={data.textdata[1].title} content={data.textdata[1].content} />
           <SectionImage sectionimg={data?.textdata[1].img || ""} />
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

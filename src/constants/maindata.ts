@@ -99,13 +99,30 @@ export interface textCardType {
   title: string;
   content: string;
 }
-export const data = {
-  title: "대화형 3D 및 AR로 작업 완료",
-  content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
-  btnContent: "지금 시작해보세요.",
-  hightlight: "다운로드나 코드가필요 하지 않습니다",
-  url: "/img/dummy_img_01.jpg",
-};
+export const data = [
+  {
+    title: "대화형 3D 및 AR로 작업 완료",
+    content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+    btnContent: "지금 시작해보세요.",
+    hightlight: "다운로드나 코드가필요 하지 않습니다",
+    url: "/img/dummy_img_01.jpg",
+  },
+  {
+    title: "Web AR로 몰입도 높고 매력적인 경험 구축",
+    content:
+      "3D 및 증강 현실 플랫폼인 Vectary를 통해 비전을 판매하고 디자인을 향상시키며 새로운 시각적 참여를 제공하세요.보기 위해 앱을 다운로드하거나 설치할 필요가 없습니다. 스마트폰이나 AR글래스를 이용하면 됩니다.",
+    btnContent: "지금 시작해보세요.",
+    hightlight: "다운로드나 코드가필요 하지 않습니다",
+    url: "/img/dummy_img_01.jpg",
+  },
+  {
+    title: "대화형 3D 및 AR로 작업 완료3",
+    content: "영감을 주고, 교육하고333, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+    btnContent: "지금 시작해보세요.",
+    hightlight: "다운로드나 코드가필요 하지 않습니다",
+    url: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f71f53756e20f012266ad8_Case%20study%20beflo.png",
+  },
+];
 
 export const mainlastsection: textCardType[] = [
   {

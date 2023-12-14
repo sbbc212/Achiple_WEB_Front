@@ -1,3 +1,11 @@
+export interface CarddataType {
+  id?: string;
+  title: string;
+  content: string;
+  img: string;
+  btntext: string;
+  type: string;
+}
 export const carddata = [
   {
     id: "0",

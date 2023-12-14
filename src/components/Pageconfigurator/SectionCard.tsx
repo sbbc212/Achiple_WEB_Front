@@ -1,8 +1,6 @@
 import { configuratordata } from "@/constants/3dconfiguratordata";
 
-import CardContent from "../Cardlayout/CardContent";
 import CardImage from "../Cardlayout/CardImage";
-import CardTitle from "../Cardlayout/CardTitle";
 
 const SectionCard = () => {
   return (
@@ -12,8 +10,8 @@ const SectionCard = () => {
           <li key={content.secsubtitle} className="card-list-item">
             <CardImage cardImg={content.img} />
             <div className="card-desc mt-[20px]">
-              <CardTitle cardtitle={content.secsubtitle} />
-              <CardContent cardcontent={content.content} />
+              <span className="block font-bold text-[24px] mb-[26px]">{content.secsubtitle}</span>
+              <p className=" mb-[20px]">{content.content}</p>
             </div>
           </li>
         )),
