@@ -8,7 +8,7 @@ import PageTopSection from "@/components/Section/PageTopSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="layout">
       <PageTopSection />
       <RealitySecTwo />
       <RealitySecThree />
