@@ -7,7 +7,7 @@ import Cardlist from "../Cardlayout/Cardlist";
 const SectionFour = () => {
   return (
     <>
-      <Cardlist maincardData={maincardData} />
+      <Cardlist maincardData={maincardData} btnText={"test"} />
     </>
   );
 };

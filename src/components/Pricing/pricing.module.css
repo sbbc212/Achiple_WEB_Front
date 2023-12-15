@@ -1,31 +1,30 @@
 .cardItem {
-    width: calc(100% / 3 - 24px);
-    gap: 0.5rem;
-    padding: 2rem;
-    border: 1px solid #d7d7d7;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 0.5rem;
+  width: calc(100% / 3 - 24px);
+  gap: 0.5rem;
+  padding: 2rem;
+  border: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 0.5rem;
 }
 
 .cardItem:nth-child(2) {
-    background-color: #2aa86b;
-    border: none;
-
+  background-color: #2aa86b;
+  border: none;
 }
 
-.option>ul {
-    padding: 1rem 0;
+.option > ul {
+  padding: 1rem 0;
 }
 
-.option>ul>li>span {
-    padding: 0.45rem 0;
+.option > ul > li > span {
+  padding: 0.45rem 0;
 }
 
 .buttonWrap button {
-    background-color: #fff;
-    border: 1px solid #2aa86b;
-    border-radius: 0.3rem;
-    color: #2aa86b;
+  background-color: #fff;
+  border: 1px solid #2aa86b;
+  border-radius: 0.3rem;
+  color: #2aa86b;
 }
