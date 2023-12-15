@@ -1,6 +1,7 @@
 import BgBanner from "@/components/Banner/BgBanner";
 import Full from "@/components/Banner/Full";
 import TextBanner from "@/components/Banner/TextBanner";
+import Linebtn from "@/components/Button/Linebtn";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
 import TextCardFrame from "@/components/importFile/TextCardFrame";
@@ -8,9 +9,10 @@ import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
 import TitleImg from "@/components/titleWimg/Title.Img";
-import { configuratordata } from "@/constants/3dconfiguratordata";
 import { textCardData } from "@/constants/importCAD.DATA";
 import { maincardData } from "@/constants/maindata";
+
+import type { TextDataItem } from "@/constants/3dconfiguratordata";
 
 function ImportFile() {
   const data = {
@@ -29,23 +31,32 @@ function ImportFile() {
     img: "/img/dummy_img_01.jpg",
     bt__text: "ff",
   };
-
+  const content: TextDataItem = {
+    id: "0",
+    title: "디자인 모드에서 프로젝트 시작",
+    datatype: "imgleft",
+    content:
+      "모든 요구 사항을 충족하는 강력한 도구입니다. 씬을 설정하고, 3D 에셋을 만들거나 가져오고, 머티리얼을 조정하고, 인터랙티브 요소를 추가할 수 있습니다.",
+  };
   return (
     <div className="space-y-16">
       <div className="layout text-center space-y-32">
         <PageTopSection data={data} />
-        <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+        <div>
+          <SectionTitleAndContent content={content} />
+          <Linebtn text={"튜토리얼보기"} />
+        </div>
         <div className="layout h-[200px] mx-auto flex justify-center">
           <TitleImg />
         </div>
       </div>
       <Full />
       <section className="layout">
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={true} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={true} />
         <PageSectionframe data={ImgTextData} isBtn={true} />
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={false} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={true} />
       </section>
       <TextBanner />
       <section className="layout">
