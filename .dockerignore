@@ -1,0 +1,22 @@
+# Ignore Node.js modules and npm artifacts
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Docker related files
+.dockerignore
+Dockerfile
+
+# Ignore Husky configuration
+.husky/
+
+# Ignore version control files
+.git/
+.gitignore
+
+# Ignore linting and formatting configuration files
+.eslintrc
+.prettierrc
+
+# Ignore documentation files
+README.md
