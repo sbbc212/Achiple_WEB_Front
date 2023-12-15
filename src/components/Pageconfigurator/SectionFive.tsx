@@ -12,7 +12,6 @@ const SectionFive = () => (
         <TextImageCard data={carddata} datatype={data.textdata[2].datatype || ""} />
       </>
     ))}
-    <TextImageCard data={[]} datatype={""} />
   </>
 );
 

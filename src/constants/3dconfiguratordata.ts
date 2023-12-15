@@ -51,6 +51,13 @@ export const configuratordata: ConfiguratorDataItem[] = [
         datatype: "imgleft",
       },
       {
+        id: "section4",
+        title: "청중에게 감동을 주고 영향력을 창출하세요2",
+        content: "",
+        img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f711f1f9709d68d9de08de_bag%20-%203d%20configurator%20vectary-p-2000.jpeg",
+        datatype: "imgleft",
+      },
+      {
         id: "04",
         title: "구성할 수 있는 항목 보기",
         content: "사용 가능한 코드 없는 구성 요소를 찾아보세요.",

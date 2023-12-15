@@ -6,7 +6,7 @@ import { configuratordata } from "@/constants/3dconfiguratordata";
 const RealitySecFive = () => {
   return (
     <>
-      <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+      <SectionTitleAndContent content={configuratordata[0].textdata[5]} />
       <RealityTextCard />
       <RealityTextCard />
     </>

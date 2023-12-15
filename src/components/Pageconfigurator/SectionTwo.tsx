@@ -1,17 +1,16 @@
-import { configuratordata } from "@/constants/3dconfiguratordata";
-
 import SectionImage from "../Section/SectionImage";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
+import { configuratordata } from "@/constants/3dconfiguratordata";
+
 const SectionTwo = () => {
   return (
-    <div>
-      {configuratordata.map((data) => (
-        <div key={data.id} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
-          <SectionTitleAndContent key={data.id} content={data.textdata[1]} />
-          <SectionImage sectionimg={data?.textdata[1].img || ""} />
-        </div>
-      ))}
+    <div className="pt-[4rem]">
+      <SectionTitleAndContent content={configuratordata[0].textdata[1]} />
+      <SectionImage sectionimg={configuratordata[0].textdata[1].img || ""} />
+      <div className="pt-[5rem]">
+        <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+      </div>
     </div>
   );
 };
