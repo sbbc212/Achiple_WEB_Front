@@ -1,8 +1,8 @@
 import React from "react";
 
-import Cardlist from "../Cardlayout/Cardlist";
-
 import { maincardData } from "@/constants/maindata";
+
+import Cardlist from "../Cardlayout/Cardlist";
 
 const SectionFour = () => {
   return (

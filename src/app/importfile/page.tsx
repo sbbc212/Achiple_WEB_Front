@@ -9,7 +9,6 @@ import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
 import TitleImg from "@/components/titleWimg/Title.Img";
-import { configuratordata } from "@/constants/3dconfiguratordata";
 import { textCardData } from "@/constants/importCAD.DATA";
 import { maincardData } from "@/constants/maindata";
 

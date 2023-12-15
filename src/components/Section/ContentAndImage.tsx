@@ -1,7 +1,7 @@
+import { configuratordata } from "@/constants/3dconfiguratordata";
+
 import SectionImage from "./SectionImage";
 import SectionTitleAndContent from "./SectionTitleAndContent";
-
-import { configuratordata } from "@/constants/3dconfiguratordata";
 
 const ContentAndImage = () => {
   return (

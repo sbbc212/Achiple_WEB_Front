@@ -1,8 +1,8 @@
-import SectionTitleAndContent from "../Section/SectionTitleAndContent";
-import TextImageCard from "../textimagecard/TextImageCard";
-
 import { configuratordata } from "@/constants/3dconfiguratordata";
 import { carddata } from "@/constants/imagecard";
+
+import SectionTitleAndContent from "../Section/SectionTitleAndContent";
+import TextImageCard from "../textimagecard/TextImageCard";
 
 const SectionTwo = () => {
   return (

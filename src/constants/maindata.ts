@@ -96,7 +96,7 @@ export const maincardData: maincardDataType[] = [
 ];
 
 export interface textCardType {
-  id?: string;
+  id: string;
   title: string;
   content: string;
 }

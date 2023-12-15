@@ -1,6 +1,6 @@
-import TextCard from "../Cardlayout/TextCard";
-
 import { mainlastsection } from "@/constants/maindata";
+
+import TextCard from "../Cardlayout/TextCard";
 
 const RealityTextCard = () => {
   return (

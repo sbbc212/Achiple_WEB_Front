@@ -1,7 +1,7 @@
+import { configuratordata } from "@/constants/3dconfiguratordata";
+
 import RealityTextCard from "./RealityTextCard";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
-
-import { configuratordata } from "@/constants/3dconfiguratordata";
 
 const RealitySecFive = () => {
   return (
