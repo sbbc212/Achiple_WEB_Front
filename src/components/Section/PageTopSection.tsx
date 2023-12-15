@@ -4,7 +4,7 @@ interface PropsTypes {
   title: string;
   content: string;
   btnContent: string;
-  hightlight: string;
+  hightlight?: string;
   url: string;
 }
 
