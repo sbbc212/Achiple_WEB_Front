@@ -1,8 +1,8 @@
-import { configuratordata } from "@/constants/3dconfiguratordata";
-
 import CardContent from "../Cardlayout/CardContent";
 import CardImage from "../Cardlayout/CardImage";
 import CardTitle from "../Cardlayout/CardTitle";
+
+import { configuratordata } from "@/constants/3dconfiguratordata";
 
 const SectionCard = () => {
   return (

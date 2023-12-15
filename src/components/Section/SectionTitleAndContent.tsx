@@ -1,8 +1,8 @@
 import React from "react";
 
-import type { TextDataItem } from "@/constants/3dconfiguratordata";
+import type { titleAndContent } from "@/constants/3dconfiguratordata";
 
-const SectionTitleAndContent = ({ content }: { content: TextDataItem }) => {
+const SectionTitleAndContent = ({ content }: { content: titleAndContent }) => {
   return (
     <div className="pt-[1rem]">
       <h3 className="text-[48px] text-center mb-[14px]" style={{ fontWeight: "600" }}>

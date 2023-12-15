@@ -9,7 +9,7 @@ import type { textCardType } from "@/constants/maindata";
 function ImgAndTextCard({ ImgTextData, textCardData }: { ImgTextData: datatype; textCardData: textCardType[] }) {
   return (
     <div>
-      <PageSectionframe data={ImgTextData} />
+      <PageSectionframe data={ImgTextData} isBtn={false} />
       <TextCardList textCardData={textCardData} />
     </div>
   );

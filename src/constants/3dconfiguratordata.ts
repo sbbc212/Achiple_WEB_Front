@@ -14,6 +14,11 @@ export interface SecCardContent {
   content: string;
   img: string;
 }
+export interface titleAndContent {
+  id: string;
+  title: string;
+  content: string;
+}
 
 export interface ConfiguratorDataItem {
   id: string;
