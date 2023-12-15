@@ -1,10 +1,11 @@
+import { configuratordata } from "@/constants/3dconfiguratordata";
+
 import SectionImage from "./SectionImage";
 import SectionKeyword from "./SectionKeyword";
 import SectionTitleAndContent from "./SectionTitleAndContent";
 import Fillbtn from "../Button/Fillbtn";
 import Linebtn from "../Button/Linebtn";
 
-import { configuratordata } from "@/constants/3dconfiguratordata";
 export interface datatype {
   bt__text: string;
   id: string;
