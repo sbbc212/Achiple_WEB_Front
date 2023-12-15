@@ -10,10 +10,10 @@ export interface menuType {
   submenu?: boolean;
 }
 const menuItems: menuType[] = [
-  { text: "Studio", href: "/" },
+  { text: "Studio", href: "/studio" },
   { text: "Explore", submenu: true },
   { text: "Business", submenu: true },
-  { text: "Pricing", href: "/pricing" },
+  { text: "pricing", href: "/pricing" },
 ];
 
 function Header() {

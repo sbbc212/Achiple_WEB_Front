@@ -9,7 +9,7 @@ const explore: MenuProps = {
     {
       key: "1",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/arichiplestudio">
           아키플스튜디오
         </Link>
       ),
@@ -17,7 +17,7 @@ const explore: MenuProps = {
     {
       key: "2",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/work&animiation">
           워크스루 & 애니메이션
         </Link>
       ),
@@ -25,7 +25,7 @@ const explore: MenuProps = {
     {
       key: "3",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/ar">
           증강 현실
         </Link>
       ),
@@ -33,29 +33,21 @@ const explore: MenuProps = {
     {
       key: "4",
       label: (
-        <Link rel="noopener noreferrer" href="/">
-          증강 현실
+        <Link rel="noopener noreferrer" href="/3dconfigurators">
+          3D Configurators
         </Link>
       ),
     },
     {
       key: "5",
       label: (
-        <Link rel="noopener noreferrer" href="/">
-          3D Configurators
-        </Link>
-      ),
-    },
-    {
-      key: "6",
-      label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/share">
           공유
         </Link>
       ),
     },
     {
-      key: "7",
+      key: "6",
       label: (
         <Link rel="noopener noreferrer" href="/importfile">
           캐드 가져오기
@@ -70,7 +62,7 @@ const Business: MenuProps = {
     {
       key: "1",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/surpport">
           고객지원
         </Link>
       ),
@@ -78,7 +70,7 @@ const Business: MenuProps = {
     {
       key: "2",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/work-flow">
           작업순서
         </Link>
       ),
