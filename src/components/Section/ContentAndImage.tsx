@@ -1,3 +1,5 @@
+import React from "react";
+
 import { configuratordata } from "@/constants/3dconfiguratordata";
 
 import SectionImage from "./SectionImage";
@@ -8,8 +10,8 @@ const ContentAndImage = () => {
     <div>
       {configuratordata.map((data) => (
         <>
-          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[1].title} content={data.textdata[1].content} />
-          <SectionImage sectionimg={data?.textdata[1].img || ""} />
+          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[1]?.title} content={data.textdata[1]?.content} />
+          <SectionImage sectionimg={data?.textdata[1]?.img || ""} />
         </>
       ))}
     </div>

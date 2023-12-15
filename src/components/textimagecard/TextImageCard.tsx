@@ -1,3 +1,5 @@
+import { mainlastsection } from "@/constants/maindata";
+
 import ImageCard from "./ImageCard";
 import TextCard from "../Cardlayout/TextCard";
 
@@ -9,7 +11,7 @@ const TextImageCard = ({ datatype, data }: { data: CarddataType[]; datatype: str
       {data.map((content: CarddataType) => (
         <div key={content.title} className={`${datatype === content.type ? "flex" : "flex flex-row-reverse"} items-center pt-10 justify-around`}>
           <ImageCard dataimg={content.img} />
-          <TextCard text={content} btnType={false} btnText={""} />
+          <TextCard lastsection={mainlastsection[3]} />
         </div>
       ))}
     </div>

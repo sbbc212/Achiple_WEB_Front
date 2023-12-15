@@ -9,7 +9,7 @@ const SectionSix = () => {
     <div>
       {configuratordata.map((data) => (
         <>
-          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[6].title} content="" />
+          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[3].title} content="textContent" />
           <TextImageCard data={carddata} datatype={data.textdata[2].datatype || ""} />
         </>
       ))}
