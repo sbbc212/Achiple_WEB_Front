@@ -1,8 +1,8 @@
+import { configuratordata } from "@/constants/3dconfiguratordata";
+
 import SectionCard from "./SectionCard";
 import Linebtn from "../Button/Linebtn";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
-
-import { configuratordata } from "@/constants/3dconfiguratordata";
 
 const SectionThree = () => {
   return (

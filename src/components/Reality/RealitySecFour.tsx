@@ -1,6 +1,6 @@
-import Cardlist from "../Cardlayout/Cardlist";
-
 import { realityData } from "@/constants/realitypagedata";
+
+import Cardlist from "../Cardlayout/Cardlist";
 
 const RealitySecFour = () => {
   return (

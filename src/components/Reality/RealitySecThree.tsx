@@ -1,6 +1,6 @@
-import PageSection from "../Section/PageSection";
-
 import { maintext } from "@/constants/maindata";
+
+import PageSection from "../Section/PageSection";
 
 const RealitySecThree = () => {
   return (
