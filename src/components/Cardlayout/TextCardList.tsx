@@ -4,9 +4,9 @@ import type { textCardType } from "@/constants/maindata";
 
 function TextCardList({ textCardData }: { textCardData: textCardType[] }) {
   return (
-    <div className="layout flex justify-between">
+    <div className="layout flex justify-evenly">
       {textCardData.map((item: textCardType) => (
-        <TextCard lastsection={item} key={item.id} />
+        <TextCard text={item} key={item.id} btnType={false} btnText={""} />
       ))}
     </div>
   );
