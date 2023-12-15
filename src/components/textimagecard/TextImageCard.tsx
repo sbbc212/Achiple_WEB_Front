@@ -11,7 +11,7 @@ const TextImageCard = ({ type }: { type: string }) => {
           {carddata.map((data) => (
             <>
               <ImageCard dataimg={data.img} />
-              <TextCard dataid={data.id} title={data.title} content={data.content} />
+              <TextCard dataid={""} title={""} content={""} />
             </>
           ))}
         </div>
@@ -21,7 +21,7 @@ const TextImageCard = ({ type }: { type: string }) => {
         <div className="flex items-center pt-10 justify-center space-x-24">
           {carddata.map((data) => (
             <>
-              <TextCard dataid={data.id} title={data.title} content={data.content} />
+              <TextCard dataid={""} title={""} content={""} />
               <ImageCard dataimg={data.img} />
             </>
           ))}
