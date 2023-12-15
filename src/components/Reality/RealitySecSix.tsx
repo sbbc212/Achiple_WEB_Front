@@ -8,7 +8,7 @@ const RealitySecSix = () => {
   return (
     <div>
       <SectionTitleAndContent content={realitytextdata[4]} />
-      <TextImageCard data={realitypagecard.slice(1, 3)} datatype={realitytextdata[4].datatype} />
+      <TextImageCard data={realitypagecard.slice(1, 3)} />
     </div>
   );
 };

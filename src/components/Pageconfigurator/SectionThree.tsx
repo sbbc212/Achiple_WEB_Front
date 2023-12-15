@@ -1,6 +1,7 @@
 import { configuratordata } from "@/constants/3dconfiguratordata";
 
 import SectionCard from "./SectionCard";
+import Linebtn from "../Button/Linebtn";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
 const SectionThree = () => {
@@ -11,8 +12,8 @@ const SectionThree = () => {
         <SectionCard />
         <SectionCard />
         <SectionCard />
+        <Linebtn text={"Archiple 도움말 섹션에서 자세히 알아보세요."} />
       </div>
-      ;
     </>
   );
 };

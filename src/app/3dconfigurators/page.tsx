@@ -1,5 +1,4 @@
 import BgBanner from "@/components/Banner/BgBanner";
-import SectionCard from "@/components/Pageconfigurator/SectionCard";
 import SectionFive from "@/components/Pageconfigurator/SectionFive";
 import SectionSix from "@/components/Pageconfigurator/SectionSix";
 import SectionThree from "@/components/Pageconfigurator/SectionThree";
@@ -13,7 +12,6 @@ const page = () => {
       <PageTopSection data={data} />
       <SectionTwo />
       <SectionThree />
-      <SectionCard />
       <SectionFive />
       <SectionSix />
       <BgBanner />
