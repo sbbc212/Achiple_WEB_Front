@@ -4,7 +4,7 @@ import Fillbtn from "../Button/Fillbtn";
 
 function Textlist() {
   return (
-    <div>
+    <>
       <div className="page-tit text-center py-[60px]">
         <h3 className="text-[48px] font-medium">소규모 및 대규모 팀의 역량 강화</h3>
       </div>
@@ -19,7 +19,7 @@ function Textlist() {
       <div className="text-center py-[60px]">
         <Fillbtn text="지금 시작해보세요." />
       </div>
-    </div>
+    </>
   );
 }
 

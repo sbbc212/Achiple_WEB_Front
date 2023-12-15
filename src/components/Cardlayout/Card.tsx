@@ -2,15 +2,17 @@ import Linebtn from "../Button/Linebtn";
 
 import type { maincardDataType } from "@/constants/maindata";
 
-function Card({ cardlist }: { cardlist: maincardDataType }) {
+function Card({ cardlist, btntext }: { cardlist: maincardDataType; btntext: string }) {
   return (
     <li className="card-list-item">
-      <img className="rounded-2xl" src={cardlist.img} alt="dummy" />
+      <div className="card-img">
+        <img className="h-full" src={cardlist.img} alt="card" />
+      </div>
       <div className="card-desc mt-[20px]">
         <span className="item-kerword text-[16px] mb-[14px]">{cardlist.subtitle}</span>
         <span className="block font-bold text-[24px] mb-[26px]">{cardlist.secSubtitle}</span>
         <p className=" mb-[20px]">{cardlist.content}</p>
-        <Linebtn text="데모보기" />
+        <Linebtn text={btntext} />
       </div>
     </li>
   );

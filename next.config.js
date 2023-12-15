@@ -8,6 +8,10 @@ module.exports = async (phase) => {
         remotePatterns: [
           {
             protocol: "https",
+            hostname: "assets-global.website-files.com",
+          },
+          {
+            protocol: "https",
             hostname: "dld3l66jf7t9m.cloudfront.net",
           },
           {
