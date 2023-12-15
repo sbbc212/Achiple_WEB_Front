@@ -24,9 +24,9 @@ export default function Home() {
       <Full />
       <div className="layout">
         <Textlist_btn />
-        <TextImageCard type={"imgright"} />
-        <TextImageCard type={"imgleft"} />
-        <TextImageCard type={"imgright"} />
+        <TextImageCard data={[]} />
+        <TextImageCard data={[]} />
+        <TextImageCard data={[]} />
       </div>
     </div>
   );
