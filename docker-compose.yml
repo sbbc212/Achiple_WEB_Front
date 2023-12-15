@@ -1,0 +1,13 @@
+# docker-compose.yml
+
+version: '3'
+
+services:
+  my-node-app:
+    build:
+      context: .
+    ports:
+      - "80:5173"
+    environment:
+      - NODE_ENV=production
+      - PORT=5173
