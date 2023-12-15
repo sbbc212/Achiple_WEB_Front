@@ -1,15 +1,15 @@
-import SectionFour from "@/components/Animation/SectionFour";
-import SectionThree from "@/components/Animation/SectionThree";
-import SectionTwo from "@/components/Animation/SectionTwo";
-import PageTopSection from "@/components/Section/PageTopSection";
+// import SectionFour from "@/components/Animation/SectionFour";
+// import SectionThree from "@/components/Animation/SectionThree";
+// import SectionTwo from "@/components/Animation/SectionTwo";
+// import PageTopSection from "@/components/Section/PageTopSection";
 
 const page = () => {
   return (
     <div className="layout">
-      <PageTopSection />
+      {/* <PageTopSection />
       <SectionTwo />
       <SectionThree />
-      <SectionFour />
+      <SectionFour /> */}
     </div>
   );
 };
