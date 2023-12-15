@@ -1,9 +1,11 @@
 import Full from "@/components/Banner/Full";
 import Cardlist from "@/components/Cardlayout/Cardlist";
+import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
 import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
-import { workflowdData } from "@/constants/workFlow";
+import ShadowCard from "@/components/work-flow/ShadowCard";
+import { workflowdData, workFlowTextCardData } from "@/constants/workFlow";
 
 function page() {
   const data = {
@@ -35,9 +37,16 @@ function page() {
         <Cardlist maincardData={workflowdData} btnText={"데모보기"} />
       </div>
       <Full />
-      <div className="layout">
+      <div className="layout space-y-10">
         <PageSectionframe data={ImgTextData} isBtn={false} />
         <PageSectionframe data={ImgTextData} isBtn={false} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={workFlowTextCardData} isBtn={false} />
+        <div className="flex justify-between">
+          <ShadowCard />
+          <ShadowCard />
+          <ShadowCard />
+        </div>
+        <Cardlist maincardData={[]} btnText={""} />
       </div>
     </section>
   );

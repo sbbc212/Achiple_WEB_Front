@@ -6,10 +6,10 @@ import PageSectionframe from "../Section/PageSection.frame";
 import type { datatype } from "../Section/PageSection";
 import type { textCardType } from "@/constants/maindata";
 
-function ImgAndTextCard({ ImgTextData, textCardData }: { ImgTextData: datatype; textCardData: textCardType[] }) {
+function ImgAndTextCard({ ImgTextData, textCardData, isBtn }: { ImgTextData: datatype; textCardData: textCardType[]; isBtn: boolean }) {
   return (
     <div>
-      <PageSectionframe data={ImgTextData} />
+      <PageSectionframe data={ImgTextData} isBtn={isBtn} />
       <TextCardList textCardData={textCardData} />
     </div>
   );

@@ -1,6 +1,7 @@
 import BgBanner from "@/components/Banner/BgBanner";
 import Full from "@/components/Banner/Full";
 import TextBanner from "@/components/Banner/TextBanner";
+import Linebtn from "@/components/Button/Linebtn";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
 import TextCardFrame from "@/components/importFile/TextCardFrame";
@@ -32,23 +33,26 @@ function ImportFile() {
     <div className="space-y-16">
       <div className="layout text-center space-y-32">
         <PageTopSection data={data} />
-        <SectionTitleAndContent
-          contenttitle={"디자인 모드에서 프로젝트 시작"}
-          content={
-            "모든 요구 사항을 충족하는 강력한 도구입니다. 씬을 설정하고, 3D 에셋을 만들거나 가져오고, 머티리얼을 조정하고, 인터랙티브 요소를 추가할 수 있습니다."
-          }
-        />
+        <div>
+          <SectionTitleAndContent
+            contenttitle={"디자인 모드에서 프로젝트 시작"}
+            content={
+              "모든 요구 사항을 충족하는 강력한 도구입니다. 씬을 설정하고, 3D 에셋을 만들거나 가져오고, 머티리얼을 조정하고, 인터랙티브 요소를 추가할 수 있습니다."
+            }
+          />
+          <Linebtn text={"튜토리얼보기"} />
+        </div>
         <div className="layout h-[200px] mx-auto flex justify-center">
           <TitleImg />
         </div>
       </div>
       <Full />
       <section className="layout">
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={true} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={true} />
         <PageSectionframe data={ImgTextData} isBtn={true} />
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
-        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={false} />
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} isBtn={true} />
       </section>
       <TextBanner />
       <section className="layout">
