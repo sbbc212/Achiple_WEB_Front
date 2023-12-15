@@ -4,7 +4,7 @@ import type { maincardDataType } from "@/constants/maindata";
 
 import "./style.css";
 
-function Cardlist({ maincardData, btnText }: { maincardData: maincardDataType[]; btnText: string }) {
+function Cardlist({ maincardData, btnText, isBtn }: { maincardData: maincardDataType[]; btnText?: string; isBtn?: boolean }) {
   return (
     <>
       <div className="page-tit text-center py-[60px]">
@@ -12,7 +12,7 @@ function Cardlist({ maincardData, btnText }: { maincardData: maincardDataType[];
       </div>
       <ul className="flex justify-between pb-[60px]">
         {maincardData.map((cardlist, index) => (
-          <Card key={index} cardlist={cardlist} btntext={btnText} />
+          <Card key={index} cardlist={cardlist} btntext={btnText!} isBtn={isBtn} />
         ))}
       </ul>
     </>

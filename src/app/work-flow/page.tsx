@@ -1,11 +1,13 @@
+import BgBanner from "@/components/Banner/BgBanner";
 import Full from "@/components/Banner/Full";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import ImgAndTextCard from "@/components/Cardlayout/ImgAndTextCard";
 import PageSectionframe from "@/components/Section/PageSection.frame";
 import PageTopSection from "@/components/Section/PageTopSection";
 import SectionTitleAndContent from "@/components/Section/SectionTitleAndContent";
+import TextImageCard from "@/components/textimagecard/TextImageCard";
 import ShadowCard from "@/components/work-flow/ShadowCard";
-import { workflowdData, workFlowTextCardData } from "@/constants/workFlow";
+import { workFlowCardData, workFlowCarddata, workflowdData, workFlowTextCardData } from "@/constants/workFlow";
 
 function page() {
   const data = {
@@ -38,6 +40,7 @@ function page() {
         <PageTopSection data={data} />
         <SectionTitleAndContent content={content} />
         <Cardlist maincardData={workflowdData} btnText={"데모보기"} />
+        <TextImageCard data={workFlowCarddata} />
       </div>
       <Full />
       <div className="layout space-y-10">
@@ -49,8 +52,13 @@ function page() {
           <ShadowCard />
           <ShadowCard />
         </div>
-        <Cardlist maincardData={[]} btnText={""} />
+        <Cardlist maincardData={workFlowCardData} isBtn={true} />
       </div>
+      <Full />
+      <section className="layout space-y-10">
+        <ImgAndTextCard ImgTextData={ImgTextData} textCardData={workFlowTextCardData} isBtn={false} />
+        <BgBanner />
+      </section>
     </section>
   );
 }
