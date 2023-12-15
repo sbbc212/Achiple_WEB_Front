@@ -6,7 +6,7 @@ function Card({ cardlist, btntext }: { cardlist: maincardDataType; btntext: stri
   return (
     <li className="card-list-item">
       <div className="card-img">
-        <img className="h-full" src={cardlist.img} alt="card" />
+        <img className="h-full rounded-2xl" src={cardlist.img} alt="card" />
       </div>
       <div className="card-desc mt-[20px]">
         <span className="item-kerword text-[16px] mb-[14px]">{cardlist.subtitle}</span>

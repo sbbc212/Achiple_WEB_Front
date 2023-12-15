@@ -1,11 +1,11 @@
-import { mainlastsection } from "@/constants/maindata";
-
 import TextCard from "../Cardlayout/TextCard";
 
-const RealityTextCard = () => {
+import type { textCardType } from "@/constants/maindata";
+
+const RealityTextCard = ({ realitytextdata }: { realitytextdata: textCardType[] }) => {
   return (
-    <div className="flex justify-between pb-9">
-      {mainlastsection.map((item) => (
+    <div className="flex justify-between pb-9 pt-9">
+      {realitytextdata.map((item) => (
         <TextCard key={item.id} text={item} btnType={false} btnText={""} />
       ))}
     </div>

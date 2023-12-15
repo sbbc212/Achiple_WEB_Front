@@ -6,7 +6,7 @@ import type { maincardDataType } from "@/constants/maindata";
 
 const SecFiveCard = ({ content }: { content: maincardDataType[] }) => {
   return (
-    <ul className="flex justify-between pb-[60px]">
+    <ul className="flex text-start justify-between pb-[60px]">
       <ThreeCardGroup content={content} />
     </ul>
   );
