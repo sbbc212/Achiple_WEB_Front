@@ -1,21 +1,33 @@
-import { mainlastsection } from "@/constants/maindata";
+import { carddata } from "@/constants/imagecard";
 
 import ImageCard from "./ImageCard";
-import TextCard from "../Cardlayout/TextCard";
+import TextCard from "./TextCardList";
 
-import type { CarddataType } from "@/constants/imagecard";
-
-const TextImageCard = ({ datatype, data }: { data: CarddataType[]; datatype: string }) => {
-  return (
-    <div className="py-10">
-      {data.map((content: CarddataType) => (
-        <div key={content.title} className={`${datatype === content.type ? "flex" : "flex flex-row-reverse"} items-center pt-10 justify-around`}>
-          <ImageCard dataimg={content.img} />
-          <TextCard lastsection={mainlastsection[3]} />
+const TextImageCard = ({ type }: { type: string }) => {
+  switch (type) {
+    case "imgleft":
+      return (
+        <div className="flex items-center pt-10 justify-center space-x-24">
+          {carddata.map((data) => (
+            <>
+              <ImageCard dataimg={data.img} />
+              <TextCard dataid={data.id} title={data.title} content={data.content} />
+            </>
+          ))}
         </div>
-      ))}
-    </div>
-  );
+      );
+    case "imgright":
+      return (
+        <div className="flex items-center pt-10 justify-center space-x-24">
+          {carddata.map((data) => (
+            <>
+              <TextCard dataid={data.id} title={data.title} content={data.content} />
+              <ImageCard dataimg={data.img} />
+            </>
+          ))}
+        </div>
+      );
+  }
 };
 
 export default TextImageCard;

@@ -36,12 +36,12 @@ function Header() {
                     {item.href ? (
                       <Link className="text-[1rem]" href={item.href!}>
                         {item.text}
-                        {item.submenu && <i className="arrow"></i>}
+                        {item.submenu && <i className="arrow">1</i>}
                       </Link>
                     ) : (
                       <div>
                         {item.text}
-                        {item.submenu && <i className="arrow"></i>}
+                        {item.submenu && <i className="arrow">1</i>}
                       </div>
                     )}
                   </li>
