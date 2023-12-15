@@ -1,8 +1,8 @@
-import { configuratordata } from "@/constants/3dconfiguratordata";
-
 import Card from "../Cardlayout/Card";
 
 import type { maincardDataType } from "@/constants/maindata";
+
+import { configuratordata } from "@/constants/3dconfiguratordata";
 
 const ExampleSection = () => {
   return (

@@ -32,6 +32,7 @@ export const maintext = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
+    btn__text: "테스트 버튼",
   },
 ];
 export const mainbottom = [
@@ -140,3 +141,10 @@ export const main = [
       "시간과 노력을 절약해 주는 실용적인 기능. 모든 장치에서 프로젝트에 쉽게 액세스할 수 있습니다. 파일 복제, 디자인 시스템 옵션, 사용자 정의 라이브러리 및 전체 3D 장면을 프레젠테이션 또는 생산성 도구에 쉽게 포함할 수 있습니다.",
   },
 ];
+export const data = {
+  title: "대화형 3D 및 AR로 작업 완료",
+  content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+  btnContent: "지금 시작해보세요.",
+  hightlight: "다운로드나 코드가필요 하지 않습니다",
+  url: "/img/dummy_img_01.jpg",
+};
