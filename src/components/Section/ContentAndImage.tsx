@@ -10,7 +10,7 @@ const ContentAndImage = () => {
     <div>
       {configuratordata.map((data) => (
         <>
-          <SectionTitleAndContent key={data.id} contenttitle={data.textdata[1]?.title} content={data.textdata[1]?.content} />
+          <SectionTitleAndContent key={data.id} content={data.textdata[1]} />
           <SectionImage sectionimg={data?.textdata[1]?.img || ""} />
         </>
       ))}

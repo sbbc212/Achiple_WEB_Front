@@ -10,7 +10,7 @@ const SectionThree = () => {
     <>
       {configuratordata.map((data) => {
         <div key={data.id} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
-          <SectionTitleAndContent contenttitle={data.textdata[2].title} content={data.textdata[2].content} />;
+          <SectionTitleAndContent content={data.textdata[2]} />;
           <SectionCard />
           <SectionCard />
           <SectionCard />

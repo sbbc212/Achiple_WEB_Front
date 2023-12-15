@@ -19,7 +19,7 @@ function PageSection({ content }: { content: datatype[] }) {
         <>
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
             <SectionKeyword sectionkeyword={item.title} />
-            <SectionTitleAndContent contenttitle={item.content} content={item.content2} />
+            <SectionTitleAndContent content={item} />
             {index === 2 ? <Fillbtn text={item.bt__text} /> : <Linebtn text={item.bt__text} />}
           </div>
           <SectionImage sectionimg={item.img} />

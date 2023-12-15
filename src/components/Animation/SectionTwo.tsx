@@ -10,7 +10,7 @@ const SectionTwo = () => {
       {configuratordata.map((data) => (
         <>
           <div className="pt-9">
-            <SectionTitleAndContent key={data.id} contenttitle={data.textdata[3].title} content={data.textdata[3].content} />
+            <SectionTitleAndContent key={data.id} content={data.textdata[3]} />
           </div>
           <TextImageCard data={carddata} datatype={data.textdata[1].datatype || ""} />
           <TextImageCard data={carddata} datatype={data.textdata[2].datatype || ""} />

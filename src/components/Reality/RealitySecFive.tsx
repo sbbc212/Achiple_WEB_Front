@@ -1,9 +1,12 @@
+import { configuratordata } from "@/constants/3dconfiguratordata";
+
 import RealityTextCard from "./RealityTextCard";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
+
 const RealitySecFive = () => {
   return (
     <>
-      <SectionTitleAndContent contenttitle={""} content={""} />
+      <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
       <RealityTextCard />
       <RealityTextCard />
     </>
