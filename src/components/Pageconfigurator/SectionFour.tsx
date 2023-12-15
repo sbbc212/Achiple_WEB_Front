@@ -11,7 +11,7 @@ const SectionFour = () => {
     <>
       <>
         <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
-        <TextImageCard data={carddata} />
+        <TextImageCard data={carddata.slice(0, 1)} />
       </>
     </>
   );
