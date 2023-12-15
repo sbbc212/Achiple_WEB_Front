@@ -1,11 +1,16 @@
+import { configuratordata } from "@/constants/3dconfiguratordata";
 import { realityData } from "@/constants/realitypagedata";
 
-import Cardlist from "../Cardlayout/Cardlist";
+import ThreeCardGroup from "../Pageconfigurator/ThreeCardGroup";
+import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
 const RealitySecFour = () => {
   return (
     <>
-      <Cardlist maincardData={realityData} btnText={"시작하기"} />
+      <SectionTitleAndContent content={configuratordata[0].textdata[3]} />
+      <ul className="flex justify-between pb-[60px]">
+        <ThreeCardGroup content={realityData} />
+      </ul>
     </>
   );
 };

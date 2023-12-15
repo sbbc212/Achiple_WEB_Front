@@ -11,7 +11,7 @@ const SectionCard = () => {
         data.seccardcontent.map((content) => (
           <li key={content.secsubtitle} className="card-list-item">
             <CardImage cardImg={content.img} />
-            <div className="card-desc mt-[20px]">
+            <div className="card-desc text-start mt-[20px]">
               <CardTitle cardtitle={content.secsubtitle} />
               <CardContent cardcontent={content.content} />
             </div>

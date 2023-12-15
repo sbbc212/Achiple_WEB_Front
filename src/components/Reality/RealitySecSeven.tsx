@@ -1,5 +1,11 @@
+import Full from "../Banner/Full";
+
 const RealitySecSeven = () => {
-  return <div>dd</div>;
+  return (
+    <>
+      <Full />
+    </>
+  );
 };
 
 export default RealitySecSeven;
