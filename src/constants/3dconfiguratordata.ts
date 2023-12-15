@@ -1,6 +1,7 @@
 import type { maincardDataType } from "./maindata";
 
 export interface TextDataItem {
+  datatype: string;
   id: string;
   title: string;
   content: string;

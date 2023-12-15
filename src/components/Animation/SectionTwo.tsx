@@ -4,19 +4,22 @@ import TextImageCard from "../textimagecard/TextImageCard";
 import { configuratordata } from "@/constants/3dconfiguratordata";
 import { carddata } from "@/constants/imagecard";
 
-const SectionSix = () => {
+const SectionTwo = () => {
   return (
     <div>
       {configuratordata.map((data) => (
         <>
-          <SectionTitleAndContent key={data.id} content={data.textdata[4]} />
+          <div className="pt-9">
+            <SectionTitleAndContent key={data.id} content={data.textdata[3]} />
+          </div>
+          <TextImageCard data={carddata} datatype={data.textdata[1].datatype || ""} />
+          <TextImageCard data={carddata} datatype={data.textdata[2].datatype || ""} />
+          <TextImageCard data={carddata} datatype={data.textdata[1].datatype || ""} />
           <TextImageCard data={carddata} datatype={data.textdata[2].datatype || ""} />
         </>
       ))}
-      <TextImageCard data={[]} datatype={""} />
-      <TextImageCard data={[]} datatype={""} />
     </div>
   );
 };
 
-export default SectionSix;
+export default SectionTwo;
