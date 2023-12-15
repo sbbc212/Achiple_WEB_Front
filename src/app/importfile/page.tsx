@@ -46,7 +46,7 @@ function ImportFile() {
       <section className="layout">
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
-        <PageSectionframe data={ImgTextData} />
+        <PageSectionframe data={ImgTextData} isBtn={true} />
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={textCardData} />
       </section>
