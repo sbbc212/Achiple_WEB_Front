@@ -6,7 +6,7 @@ export interface CarddataType {
   btntext: string;
   type: string;
 }
-export const carddata = [
+export const carddata: CarddataType[] = [
   {
     id: "0",
     title: "3D 디자인 만들기",

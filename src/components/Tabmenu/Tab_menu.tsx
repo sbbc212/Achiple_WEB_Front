@@ -32,8 +32,8 @@ export default function Tab() {
   return (
     <div className={styles.tabContainer}>
       <ul className={styles.tabMenu}>
-        {data.map((item) => (
-          <li key={item.id} className={index === item.id && styles.active} onClick={() => setIndex(item.id)}>
+        {data.map((item, idx) => (
+          <li key={item.id} className={index === idx ? styles.active : ""} onClick={() => setIndex(item.id)}>
             {item.title}
           </li>
         ))}

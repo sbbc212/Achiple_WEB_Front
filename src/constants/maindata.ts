@@ -69,6 +69,7 @@ export interface maincardDataType {
   id: string;
   subtitle: string;
   secSubtitle: string;
+  btnText: string;
   content: string;
   img: string;
 }
@@ -77,7 +78,7 @@ export const maincardData: maincardDataType[] = [
     id: "0",
     subtitle: "산업1",
     secSubtitle: "패션1",
-
+    btnText: "text",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
     img: "/img/dummy_img_01.jpg",
   },
@@ -85,6 +86,7 @@ export const maincardData: maincardDataType[] = [
     id: "1",
     subtitle: "산업2",
     secSubtitle: "패션2",
+    btnText: "text",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
     img: "/img/dummy_img_01.jpg",
   },
@@ -92,6 +94,7 @@ export const maincardData: maincardDataType[] = [
     id: "2",
     subtitle: "산업3",
     secSubtitle: "패션3",
+    btnText: "text",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
     img: "/img/dummy_img_01.jpg",
   },

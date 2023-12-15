@@ -1,3 +1,5 @@
+import { carddata } from "@/constants/imagecard";
+
 import TextImageCard from "../textimagecard/TextImageCard";
 
 export default function TextCardFrame() {
@@ -5,9 +7,9 @@ export default function TextCardFrame() {
     <div>
       <h2>벡타리 성공 사례에서 영감 얻기</h2>
       <div>
-        <TextImageCard type={"imgright"} />
-        <TextImageCard type={"imgleft"} />
-        <TextImageCard type={"imgright"} />
+        <TextImageCard data={carddata} datatype={carddata[0].type} />
+        <TextImageCard data={carddata} datatype={carddata[0].type} />
+        <TextImageCard data={carddata} datatype={carddata[0].type} />
       </div>
     </div>
   );
