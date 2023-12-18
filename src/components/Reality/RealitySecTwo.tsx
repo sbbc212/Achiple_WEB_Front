@@ -9,7 +9,9 @@ const RealitySecTwo = () => {
     <div>
       {configuratordata.map((data) => (
         <>
-          <SectionTitleAndContent key={data.id} content={data.textdata[4]} />
+          <div className="pt-[5rem]">
+            <SectionTitleAndContent key={data.id} content={data.textdata[4]} />
+          </div>
           <TextImageCard data={realitypagecard} />
         </>
       ))}
