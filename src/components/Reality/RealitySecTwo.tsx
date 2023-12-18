@@ -6,7 +6,7 @@ import TextImageCard from "../textimagecard/TextImageCard";
 
 const RealitySecTwo = () => {
   return (
-    <div>
+    <>
       {configuratordata.map((data) => (
         <>
           <div className="pt-[5rem]">
@@ -15,7 +15,7 @@ const RealitySecTwo = () => {
           <TextImageCard data={realitypagecard} />
         </>
       ))}
-    </div>
+    </>
   );
 };
 
