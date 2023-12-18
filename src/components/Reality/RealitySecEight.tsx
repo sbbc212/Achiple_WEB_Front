@@ -1,5 +1,3 @@
-import React from "react";
-
 import RealityTextCard from "./RealityTextCard";
 import Linebtn from "../Button/Linebtn";
 import SectionImage from "../Section/SectionImage";

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { studioonetitle, studiotwo } from "@/constants/studio";
 
 import SectionImage from "../Section/SectionImage";

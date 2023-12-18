@@ -1,5 +1,3 @@
-import React from "react";
-
 import BgBanner from "@/components/Banner/BgBanner";
 import Full from "@/components/Banner/Full";
 import TextBanner from "@/components/Banner/TextBanner";
