@@ -1,6 +1,48 @@
-import type { TextDataItem } from "./3dconfiguratordata";
+import type { TextDataItem, titleAndContent } from "./3dconfiguratordata";
 import type { maincardDataType, textCardType } from "./maindata";
 
+export const realitymaindata = {
+  title: "대화형 3D 및 AR로 작업 완료reality",
+  content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+  btnContent: "지금 시작해보세요.",
+  hightlight: "다운로드나 코드가필요 하지 않습니다",
+  url: "/img/dummy_img_01.jpg",
+};
+export const realitytitle: titleAndContent[] = [
+  {
+    id: "studio1",
+    title: "나만의 3D 구성 프로그램 만들기studio",
+    content: "코드가 없습니다. Vectary에서 미리 만들어진 요소로 UI를 설정합니다. 메뉴, 기능 및 트리거를 디자인합니다. 몇 분 안에 준비됩니다.",
+  },
+  {
+    id: "studio2",
+    title: "청중에게 감동을 주고 영향력을 창출하세요studio",
+    content:
+      "아이디어부터 최종 컨셉까지 모든 제품 버전을 웹에 표시합니다. 시청자의 관심을 사로잡고 메인 쇼케이스를 가리지 않으면서 다양한 정보를 공개하세요. 맞춤형 브랜딩을 추가하세요. 채팅에서 열거나 온라인 어디든 삽입할 수 있는 하나의 링크를 보내 공유하세요.1",
+  },
+  {
+    id: "studio3",
+    title: "청중에게 감동을 주고 영향력을 창출하세요studio",
+    content:
+      "아이디어부터 최종 컨셉까지 모든 제품 버전을 웹에 표시합니다. 시청자의 관심을 사로잡고 메인 쇼케이스를 가리지 않으면서 다양한 정보를 공개하세요. 맞춤형 브랜딩을 추가하세요. 채팅에서 열거나 온라인 어디든 삽입할 수 있는 하나의 링크를 보내 공유하세요.1",
+  },
+  {
+    id: "studio4",
+    title: "청중에게 감동을 주고 영향력을 창출하세요studio",
+    content: "",
+  },
+];
+export const realitytoptext = [
+  {
+    id: "0",
+    title: "솔루션reality",
+    content: "3D 워크플로에 필요한 모든 것reality",
+    content2:
+      " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
+    img: "/img/dummy_img_01.jpg",
+    bt__text: "더 많은 비즈니스 솔루션을 찾아보세요",
+  },
+];
 export const realityData: maincardDataType[] = [
   {
     id: "0",

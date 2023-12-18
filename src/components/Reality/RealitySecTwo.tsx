@@ -1,5 +1,5 @@
-import { configuratordata } from "@/constants/3dconfiguratordata";
 import { realitypagecard } from "@/constants/imagecard";
+import { realitytextdata } from "@/constants/realitypagedata";
 
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 import TextImageCard from "../textimagecard/TextImageCard";
@@ -7,14 +7,8 @@ import TextImageCard from "../textimagecard/TextImageCard";
 const RealitySecTwo = () => {
   return (
     <>
-      {configuratordata.map((data) => (
-        <>
-          <div className="pt-[5rem]">
-            <SectionTitleAndContent key={data.id} content={data.textdata[4]} />
-          </div>
-          <TextImageCard data={realitypagecard} />
-        </>
-      ))}
+      <SectionTitleAndContent content={realitytextdata[4]} />
+      <TextImageCard data={realitypagecard} />
     </>
   );
 };
