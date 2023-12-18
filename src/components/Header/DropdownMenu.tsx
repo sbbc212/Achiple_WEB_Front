@@ -39,14 +39,6 @@ const explore: MenuProps = {
       ),
     },
     {
-      key: "5",
-      label: (
-        <Link rel="noopener noreferrer" href="/">
-          3D Configurators
-        </Link>
-      ),
-    },
-    {
       key: "6",
       label: (
         <Link rel="noopener noreferrer" href="/importfile">
