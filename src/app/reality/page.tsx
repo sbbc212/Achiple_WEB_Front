@@ -12,6 +12,7 @@ import RealitySecThree from "@/components/Reality/RealitySecThree";
 import RealitySecTwo from "@/components/Reality/RealitySecTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
 import { data } from "@/constants/maindata";
+import { realityseceight, seceighttext } from "@/constants/realitypagedata";
 
 const page = () => {
   return (
@@ -28,8 +29,7 @@ const page = () => {
         <RealitySecSix />
       </div>
       <RealitySecSeven />
-
-      <RealitySecEight />
+      <RealitySecEight data={realityseceight} textcarddata={seceighttext} />
       <RealitySecNine />
       <BgBanner />
     </>
