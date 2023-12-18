@@ -5,28 +5,9 @@ import { useState } from "react";
 import styles from "./tab.module.css";
 import Pricing from "../Pricing/Pricing";
 
-export interface tabData {
-  id: number;
-  pricing: string;
-  description: string;
-}
+import type { tabData } from "@/app/pricing/page";
 
-export default function Tab() {
-  const data = [
-    {
-      id: 0,
-      title: "월간",
-      pricing: "$19",
-      description: "30일 평가판 기간 이후에는 매월 청구 됩니다.",
-    },
-    {
-      id: 1,
-      title: "연간",
-      pricing: "$15",
-      description: "30일 평가판 기간 이후에는 매월 청구 됨, 연간 $180",
-    },
-  ];
-
+export default function Tab({ data }: { data: tabData[] }) {
   const [index, setIndex] = useState(0);
 
   return (
