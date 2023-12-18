@@ -1,4 +1,5 @@
 import { Dropdown } from "antd";
+import Image from "next/image";
 import Link from "next/link";
 
 import type { menuType } from "./Header";
@@ -74,10 +75,10 @@ function DropdownMenu({ item }: { item: menuType }) {
   const items = item.text === "Business" ? Business : explore;
   return (
     <Dropdown key={item.text} menu={items} placement="bottom" arrow>
-      <li className="my-auto cursor-pointer">
-        <div className="text-[1rem]">
+      <li className="my-auto cursor-pointer ">
+        <div className="text-[1rem] flex gap-2">
           {item.text}
-          {item.submenu && <i className="arrow">1</i>}
+          {item.submenu && <Image quality={100} width={16} height={24} alt="icon" src={"/img/arrow.png"} />}
         </div>
       </li>
     </Dropdown>
