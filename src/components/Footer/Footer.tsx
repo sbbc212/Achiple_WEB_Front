@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 import { footerdata } from "@/constants/footer";
+
 import "./style.css";
 
 function Footer() {
@@ -12,14 +15,14 @@ function Footer() {
             </span>
             <ul>
               <li>
-                <a className="text-[#949494]" href="#">
+                <Link className="text-[#949494]" href="#">
                   가격
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-[#949494]" href="#">
+                <Link className="text-[#949494]" href="/surpport">
                   문의
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -29,9 +32,9 @@ function Footer() {
               <ul>
                 {data.title.map((datatitle) => (
                   <li key={datatitle.id}>
-                    <a className="text-[#949494]" href={datatitle.link}>
+                    <Link className="text-[#949494]" href={datatitle.link}>
                       {datatitle.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
