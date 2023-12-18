@@ -1,18 +1,26 @@
 import React from "react";
 
-import { configuratordata } from "@/constants/3dconfiguratordata";
-import { mainlastsection } from "@/constants/maindata";
-
 import RealityTextCard from "./RealityTextCard";
+import Linebtn from "../Button/Linebtn";
 import SectionImage from "../Section/SectionImage";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
-const RealitySecEight = () => {
+import type { TextDataItem } from "@/constants/3dconfiguratordata";
+import type { textCardType } from "@/constants/maindata";
+
+const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem[]; textcarddata: textCardType[] }) => {
   return (
-    <div className="layout">
-      <SectionTitleAndContent content={configuratordata[0].textdata[1]} />
-      <SectionImage sectionimg={configuratordata[0].textdata[1].img || ""} />
-      <RealityTextCard realitytextdata={mainlastsection} />
+    <div className="layout flex-col flex justify-center">
+      <SectionTitleAndContent content={data[0]} />
+      {data[0].datatype === "nobtn" ? (
+        ""
+      ) : (
+        <div className="mx-auto pb-9">
+          <Linebtn text={"애니메이션에 대해 자세히 알아보기"} />
+        </div>
+      )}
+      <SectionImage sectionimg={data[0].img || ""} />
+      <RealityTextCard realitytextdata={textcarddata} />
     </div>
   );
 };
