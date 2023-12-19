@@ -38,6 +38,7 @@ function ImportFile() {
     content:
       "모든 요구 사항을 충족하는 강력한 도구입니다. 씬을 설정하고, 3D 에셋을 만들거나 가져오고, 머티리얼을 조정하고, 인터랙티브 요소를 추가할 수 있습니다.",
   };
+
   return (
     <div className="space-y-16">
       <div className="layout text-center space-y-32">
