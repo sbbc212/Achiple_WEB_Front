@@ -1,21 +1,21 @@
 import BgBanner from "@/components/Banner/BgBanner";
 import SectionFive from "@/components/Pageconfigurator/SectionFive";
 import SectionFour from "@/components/Pageconfigurator/SectionFour";
-import SectionSix from "@/components/Pageconfigurator/SectionSix";
 import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-import { data } from "@/constants/maindata";
+import { configuratordata, configuratortopdata } from "@/constants/3dconfiguratordata";
+import { carddata } from "@/constants/imagecard";
 
 const page = () => {
   return (
     <div className="layout">
-      <PageTopSection data={data} />
+      <PageTopSection data={configuratortopdata} />
       <SectionTwo />
       <SectionThree />
-      <SectionFour />
+      <SectionFour textimgcard={carddata.slice(0, 1)} titlecontent={configuratordata[0].textdata[2]} />
       <SectionFive />
-      <SectionSix />
+      <SectionFour textimgcard={carddata} titlecontent={configuratordata[0].textdata[2]} />
       <BgBanner />
     </div>
   );

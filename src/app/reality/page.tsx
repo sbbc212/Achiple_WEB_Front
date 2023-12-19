@@ -1,15 +1,15 @@
 import BgBanner from "@/components/Banner/BgBanner";
 import Full from "@/components/Banner/Full";
 import TextBanner from "@/components/Banner/TextBanner";
+import SectionFour from "@/components/Pageconfigurator/SectionFour";
 import RealitySecEight from "@/components/Reality/RealitySecEight";
 import RealitySecFive from "@/components/Reality/RealitySecFive";
 import RealitySecFour from "@/components/Reality/RealitySecFour";
 import RealitySecNine from "@/components/Reality/RealitySecNine";
-import RealitySecSix from "@/components/Reality/RealitySecSix";
 import RealitySecThree from "@/components/Reality/RealitySecThree";
-import RealitySecTwo from "@/components/Reality/RealitySecTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-import { realitymaindata, realityseceight, seceighttext } from "@/constants/realitypagedata";
+import { realitypagecard } from "@/constants/imagecard";
+import { realitymaindata, realityseceight, realitytextdata, seceighttext } from "@/constants/realitypagedata";
 
 const page = () => {
   return (
@@ -19,11 +19,11 @@ const page = () => {
         <div className="py-[7rem]">
           <TextBanner />
         </div>
-        <RealitySecTwo />
+        <SectionFour textimgcard={realitypagecard} titlecontent={realitytextdata[4]} />
         <RealitySecThree />
         <RealitySecFour />
         <RealitySecFive />
-        <RealitySecSix />
+        <SectionFour textimgcard={realitypagecard.slice(1, 3)} titlecontent={realitytextdata[4]} />
       </div>
       <Full />
       <RealitySecEight data={realityseceight[0]} textcarddata={seceighttext.slice(0, 3)} />
