@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./pricing.module.css";
 
-import type { tabData } from "@/app/Pricing/page";
+import type { tabData } from "@/app/pricing/page";
 
 function Pricing({ data }: { data: tabData }) {
   const plans = [

@@ -5,7 +5,7 @@ import { useState } from "react";
 import styles from "./tab.module.css";
 import Pricing from "../Pricing/Pricing";
 
-import type { tabData } from "@/app/Pricing/page";
+import type { tabData } from "@/app/pricing/page";
 
 export default function Tab({ data }: { data: tabData[] }) {
   const [index, setIndex] = useState(0);
