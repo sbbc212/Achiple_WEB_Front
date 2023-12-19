@@ -71,6 +71,8 @@ export interface maincardDataType {
   secSubtitle: string;
   btnText: string;
   content: string;
+  seccondcontent?: string;
+  type?: string;
   img: string;
 }
 export const maincardData: maincardDataType[] = [

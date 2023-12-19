@@ -2,17 +2,10 @@ import type { TextDataItem } from "./3dconfiguratordata";
 import type { CarddataType } from "./imagecard";
 import type { textCardType } from "./maindata";
 
-export const data = {
-  title: "대화형 3D 및 AR로 작업 완료 animation",
-  content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
-  btnContent: "지금 시작해보세요.",
-  hightlight: "다운로드나 코드가필요 하지 않습니다",
-  url: "/img/dummy_img_01.jpg",
-};
 export const animationdata: CarddataType[] = [
   {
     id: "0",
-    title: "3D 디자인 만들기",
+    title: "3Danimation0",
     content:
       "장면을 구축하고, 3D 자산을 만들거나 가져오고, 재료를 조정하고, 반응형 트리거가 될 수 있는 그래픽 요소를 추가하는 디자인 모드에서 프로젝트를 시작하세요.",
     img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/638e42489cd4ab79e3250fa5_Create_a_3D_design.jpg",
@@ -21,7 +14,7 @@ export const animationdata: CarddataType[] = [
   },
   {
     id: "1",
-    title: "3D 디자인 만들기",
+    title: "3Danimation1",
     content:
       "장면을 구축하고, 3D 자산을 만들거나 가져오고, 재료를 조정하고, 반응형 트리거가 될 수 있는 그래픽 요소를 추가하는 디자인 모드에서 프로젝트를 시작하세요.",
     img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/638e42478ec38d36ec6399c2_Set_up_animations.jpg",
@@ -30,7 +23,7 @@ export const animationdata: CarddataType[] = [
   },
   {
     id: "3",
-    title: "3D 디자인 만들기",
+    title: "3Danimation2",
     content:
       "장면을 구축하고, 3D 자산을 만들거나 가져오고, 재료를 조정하고, 반응형 트리거가 될 수 있는 그래픽 요소를 추가하는 디자인 모드에서 프로젝트를 시작하세요.",
     img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/6391f59423d64fbcd5e2096f_Share_the_experience.jpg",
@@ -39,7 +32,7 @@ export const animationdata: CarddataType[] = [
   },
   {
     id: "4",
-    title: "3D 디자인 만들기",
+    title: "3Danimation3",
     content:
       "장면을 구축하고, 3D 자산을 만들거나 가져오고, 재료를 조정하고, 반응형 트리거가 될 수 있는 그래픽 요소를 추가하는 디자인 모드에서 프로젝트를 시작하세요.",
     img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/638e42478ec38d36ec6399c2_Set_up_animations.jpg",
@@ -130,3 +123,10 @@ export const secfouranimation: textCardType[] = [
     btnText: "30일 무료 평가판을 시작하세요",
   },
 ];
+export const animationtop = {
+  title: "animation",
+  content: "영감을 주고, 교육하고, 문제를 해결하는 대화형 3D 디자인을 만들고 관리하기 위한 온라인 플랫폼인 Vectary를 만나보세요.",
+  btnContent: "지금 시작해보세요.",
+  hightlight: "다운로드나 코드가필요 하지 않습니다",
+  url: "/img/dummy_img_01.jpg",
+};
