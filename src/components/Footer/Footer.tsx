@@ -15,7 +15,7 @@ function Footer() {
             </span>
             <ul>
               <li>
-                <Link className="text-[#949494]" href="#">
+                <Link className="text-[#949494]" href="/pricing">
                   가격
                 </Link>
               </li>

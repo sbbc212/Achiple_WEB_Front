@@ -1,13 +1,17 @@
 "use client";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { RecoilRoot } from "recoil";
 
-function RecoilFrame({ children }: { children: React.ReactNode }) {
-  const queryClient = new QueryClient();
+import type { ReactNode } from "react";
+
+import { Provider } from "react-redux";
+import { StyleRegistry } from "styled-jsx";
+
+import { store } from "./redux/store";
+
+function RecoilFrame({ children }: { children: ReactNode }) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <RecoilRoot>{children}</RecoilRoot>
-    </QueryClientProvider>
+    <Provider store={store}>
+      <StyleRegistry>{children}</StyleRegistry>
+    </Provider>
   );
 }
 

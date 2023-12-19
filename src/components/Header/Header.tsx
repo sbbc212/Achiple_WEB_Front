@@ -51,8 +51,12 @@ function Header() {
           </div>
           <div className="user-wrap">
             <div className="flex gap-[12px]">
-              <button className="login">Login</button>
-              <button className="sign">SignUp</button>
+              <Link href="/signin">
+                <button className="login">Login</button>
+              </Link>
+              <Link href="/signup">
+                <button className="sign">SignUp</button>
+              </Link>
             </div>
           </div>
         </nav>

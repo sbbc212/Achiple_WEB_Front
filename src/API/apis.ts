@@ -8,10 +8,13 @@ type IAxiosParams = {
   body?: unknown;
 };
 
-export class basicApis {
+export class baseApi {
   private axiosInstance = axiosInstance;
   reSettingURL(url: string) {
     this.axiosInstance.defaults.baseURL = url;
+  }
+  getURL() {
+    return this.axiosInstance.defaults.baseURL;
   }
   addHeaders(header: object) {
     return {
