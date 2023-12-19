@@ -7,7 +7,7 @@ import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 import type { TextDataItem } from "@/constants/3dconfiguratordata";
 import type { textCardType } from "@/constants/maindata";
 
-const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem; textcarddata: textCardType[] }) => {
+const RealitySecEight = ({ data, secondtitle, textcarddata }: { secondtitle?: TextDataItem; data: TextDataItem; textcarddata: textCardType[] }) => {
   return (
     <div className="layout flex-col flex justify-center">
       <SectionTitleAndContent content={data} />
@@ -19,6 +19,12 @@ const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem; textcardd
         </div>
       )}
       <SectionImage sectionimg={data.img || ""} />
+      {data.secondtitle === "true" && (
+        <div className="section-tit text-center pt-[6rem]" style={{ padding: "30px 60px 0 60px" }}>
+          <SectionTitleAndContent content={secondtitle} />
+        </div>
+      )}
+
       {textcarddata[0]?.cardtype ? (
         <div className="flex justify-center space-x-11 pt-10 text-lg">
           {textcarddata.map((data, i) => (
