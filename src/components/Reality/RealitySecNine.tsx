@@ -11,7 +11,7 @@ const RealitySecNine = () => {
       <SectionImage sectionimg={realitytextdata[0].img || ""} />
       <div className="py-[7rem]">
         <SectionTitleAndContent content={realitytitle[1]} />
-        <RealityTextCard realitytextdata={seceighttext} />
+        <RealityTextCard realitytextdata={seceighttext.slice(0, 3)} />
       </div>
     </div>
   );

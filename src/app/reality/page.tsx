@@ -26,7 +26,7 @@ const page = () => {
         <RealitySecSix />
       </div>
       <Full />
-      <RealitySecEight data={realityseceight[0]} textcarddata={seceighttext} />
+      <RealitySecEight data={realityseceight[0]} textcarddata={seceighttext.slice(0, 3)} />
       <RealitySecNine />
       <BgBanner />
     </>

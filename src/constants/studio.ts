@@ -125,3 +125,22 @@ export const studiotwo: TextDataItem[] = [
     datatype: "btn",
   },
 ];
+
+export const studiotwocard: textCardType[] = [
+  {
+    id: "0",
+    title: "벡터 스타터studio0",
+    content:
+      "기술 세트를 구축하고 3D 디자인의 가능성에 대한 이해를 높일 수 있는 접근 가능한 옵션입니다. 아이디어, 프로젝트, 콘텐츠 협업 및 공유 방법을 시각화하기 위한 새로운 옵션을 소개합니다.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    cardtype: "twocard",
+  },
+  {
+    id: "1",
+    title: "벡터 프로studio1",
+    content:
+      "  고객이나 외부 파트너에게 컨셉을 전달하는 전문가를 위한 이상적인 계획입니다. Vectary PRO로 최선을 다해 작업해 보세요. 시각적 설명, 몰입형 경험, 실제 디자인 효과를 제공하는 기능에 액세스해 보세요.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    cardtype: "twocard",
+  },
+];
