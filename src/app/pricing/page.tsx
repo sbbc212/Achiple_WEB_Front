@@ -1,4 +1,4 @@
-"'use client ";
+"use client";
 
 import React from "react";
 
@@ -12,7 +12,7 @@ export interface tabData {
   description: string;
 }
 
-function page() {
+function Pricingpage() {
   const data: tabData[] = [
     {
       id: 0,
@@ -47,4 +47,4 @@ function page() {
   );
 }
 
-export default page;
+export default Pricingpage;

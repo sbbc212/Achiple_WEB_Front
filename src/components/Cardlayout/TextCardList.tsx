@@ -5,7 +5,7 @@ import type { textCardType } from "@/constants/maindata";
 function TextCardList({ textCardData }: { textCardData: textCardType[] }) {
   return (
     <div>
-      <ul className="flex justify-between py-[32px]">
+      <ul className="flex justify-between py-[32px] gap-5">
         {textCardData.map((item: textCardType) => (
           <TextCard key={item.id} text={item} btnType={false} btnText={""} />
         ))}
