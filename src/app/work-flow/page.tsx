@@ -47,7 +47,7 @@ function page() {
         <PageSectionframe data={ImgTextData} isBtn={false} />
         <PageSectionframe data={ImgTextData} isBtn={false} />
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={workFlowTextCardData} isBtn={false} />
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-5">
           <ShadowCard />
           <ShadowCard />
           <ShadowCard />

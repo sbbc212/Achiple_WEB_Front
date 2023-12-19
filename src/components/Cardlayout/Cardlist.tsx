@@ -2,8 +2,6 @@ import Card from "./Card";
 
 import type { maincardDataType } from "@/constants/maindata";
 
-import "./style.css";
-
 function Cardlist({ maincardData, btnText, isBtn }: { maincardData: maincardDataType[]; btnText?: string; isBtn?: boolean }) {
   return (
     <>
