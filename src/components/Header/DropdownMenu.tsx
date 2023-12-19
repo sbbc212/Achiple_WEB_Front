@@ -78,7 +78,7 @@ function DropdownMenu({ item }: { item: menuType }) {
       <li className="my-auto cursor-pointer ">
         <div className="text-[1rem] flex gap-2">
           {item.text}
-          {item.submenu && <Image quality={100} width={16} height={24} alt="icon" src={"/img/arrow.png"} />}
+          {item.submenu && <Image quality={100} width={14} height={14} alt="icon" src={"/img/arrow.png"} />}
         </div>
       </li>
     </Dropdown>
