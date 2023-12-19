@@ -12,7 +12,7 @@ const page = () => {
       <PageTopSection data={data} />
       <SectionTwo />
       <SectionThree />
-      <RealitySecEight data={animationsecfour} textcarddata={secfourtext} />
+      <RealitySecEight data={animationsecfour[0]} textcarddata={secfourtext} />
       <BgBanner />
     </div>
   );

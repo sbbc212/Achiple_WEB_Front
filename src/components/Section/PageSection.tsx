@@ -15,7 +15,7 @@ export interface datatype {
   img: string;
 }
 
-function PageSection({ content }: { content: datatype[] }) {
+function PageSection({ content, isBtn }: { content: datatype[]; isBtn?: boolean }) {
   return (
     <div className="layout contant py-[60px]">
       {content.map((item, index) => (
@@ -23,7 +23,7 @@ function PageSection({ content }: { content: datatype[] }) {
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
             <SectionKeyword sectionkeyword={item.title} />
             <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
-            {index === 2 ? <Fillbtn text={item.bt__text} /> : <Linebtn text={item.bt__text} />}
+            {!isBtn && (index === 2 ? <Fillbtn text={item.bt__text} /> : <Linebtn text={item.bt__text} />)}
           </div>
           <SectionImage sectionimg={item.img} />
         </>

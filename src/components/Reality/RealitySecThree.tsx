@@ -1,11 +1,11 @@
-import { maintext } from "@/constants/maindata";
+import { realitytoptext } from "@/constants/realitypagedata";
 
 import PageSection from "../Section/PageSection";
 
 const RealitySecThree = () => {
   return (
-    <div className="py-[5rem]">
-      <PageSection content={maintext} />
+    <div className="py-[60px]">
+      <PageSection content={realitytoptext} />
     </div>
   );
 };

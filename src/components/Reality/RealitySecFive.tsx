@@ -1,16 +1,15 @@
-import { configuratordata } from "@/constants/3dconfiguratordata";
-import { mainlastsection } from "@/constants/maindata";
+import { realitytitle, seceighttext } from "@/constants/realitypagedata";
 
 import RealityTextCard from "./RealityTextCard";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
 const RealitySecFive = () => {
   return (
-    <>
-      <SectionTitleAndContent content={configuratordata[0].textdata[5]} />
-      <RealityTextCard realitytextdata={mainlastsection} />
-      <RealityTextCard realitytextdata={mainlastsection} />
-    </>
+    <div className="py-[60px]">
+      <SectionTitleAndContent content={realitytitle[0]} />
+      <RealityTextCard realitytextdata={seceighttext} />
+      <RealityTextCard realitytextdata={seceighttext} />
+    </div>
   );
 };
 
