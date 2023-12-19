@@ -10,21 +10,13 @@ const explore: MenuProps = {
     {
       key: "1",
       label: (
-        <Link rel="noopener noreferrer" href="/arichiplestudio">
-          아키플스튜디오
-        </Link>
-      ),
-    },
-    {
-      key: "2",
-      label: (
         <Link rel="noopener noreferrer" href="/animation">
           워크스루 & 애니메이션
         </Link>
       ),
     },
     {
-      key: "3",
+      key: "2",
       label: (
         <Link rel="noopener noreferrer" href="/reality">
           증강 현실
@@ -32,7 +24,7 @@ const explore: MenuProps = {
       ),
     },
     {
-      key: "4",
+      key: "3",
       label: (
         <Link rel="noopener noreferrer" href="/3dconfigurators">
           3D Configurators
@@ -40,7 +32,7 @@ const explore: MenuProps = {
       ),
     },
     {
-      key: "6",
+      key: "4",
       label: (
         <Link rel="noopener noreferrer" href="/importfile">
           캐드 가져오기

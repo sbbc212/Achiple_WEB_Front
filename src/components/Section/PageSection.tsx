@@ -17,7 +17,7 @@ export interface datatype {
 
 function PageSection({ content }: { content: datatype[] }) {
   return (
-    <div className="layout contant py-[60px]">
+    <div className="contant py-[60px]">
       {content.map((item, index) => (
         <>
           <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
