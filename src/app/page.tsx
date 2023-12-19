@@ -4,7 +4,6 @@ import Textlist from "@/components/Cardlayout/Textlist";
 import Textlist_btn from "@/components/Cardlayout/Textlist_btn";
 import PageSection from "@/components/Section/PageSection";
 import PageTopSection from "@/components/Section/PageTopSection";
-import TextImageCard from "@/components/textimagecard/TextImageCard";
 import { data, mainbottom, maincardData, maintext, topsection } from "@/constants/maindata";
 
 export default function Home() {
@@ -19,14 +18,11 @@ export default function Home() {
         <PageSection content={topsection} />
         <Textlist />
         <Cardlist maincardData={maincardData} btnText={"시작하기"} />
-        <PageSection content={mainbottom} />
+        <PageSection content={mainbottom} isBtn={true} />
       </div>
       <Full />
       <div className="layout">
         <Textlist_btn />
-        <TextImageCard data={[]} />
-        <TextImageCard data={[]} />
-        <TextImageCard data={[]} />
       </div>
     </div>
   );
