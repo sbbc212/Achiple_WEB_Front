@@ -34,18 +34,22 @@ function Pricing({ data }: { data: tabData }) {
         {plans.map((plan) => (
           <li className={styles.cardItem} key={plan.type}>
             <div>
-              <span className="rating font-bold text-[20px]">{plan.type}</span>
-              <p className="pricing font-bold text-[54px] mb-[20px]">{plan.price}</p>
-              <div className="card-desc py-[20px]">{plan.description}</div>
+              <span className={`rating font-bold text-[20px] ${plan.type === "Pro" ? "text-white" : "text-[#191919]"}`}>{plan.type}</span>
+              <p className={`pricing font-bold text-[54px] mb-[20px] ${plan.type === "Pro" ? "text-white" : "text-[#191919]"}`}>{plan.price}</p>
+              <div className={`card-desc py-[20px] ${plan.type === "Pro" ? "text-white" : "text-[#191919]"}`}>{plan.description}</div>
             </div>
             <div className={styles.option}>
-              {plan.type !== "Business" && <span>{`${plan.type === "Pro" ? "스타터 플러스" : "Pro plus"} 의 모든 것`}</span>}
+              {plan.type !== "Business" && (
+                <span className={`${plan.type === "Pro" ? "text-white" : "text-[#191919]"}`}>{`${
+                  plan.type === "Pro" ? "스타터 플러스" : "Pro plus"
+                } 의 모든 것`}</span>
+              )}
               <ul>
                 {plan.features.map((feature) => (
                   <li className="option-list" key={feature}>
                     <span className={`bold flex items-center gap-2 ${plan.type === "Pro" ? "text-white" : "text-[#191919]"}`}>
                       <i>
-                        <img src={`img/check${plan.type === "Pro" ? "_w" : ""}.png`} alt="" />
+                        <img src={`img/check${plan.type === "Pro" ? "_w" : "_b"}.png`} alt="" />
                       </i>
                       {feature}
                     </span>

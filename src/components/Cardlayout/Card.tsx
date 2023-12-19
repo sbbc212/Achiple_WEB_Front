@@ -1,3 +1,4 @@
+import styles from "./itemlist.module.css";
 import Linebtn from "../Button/Linebtn";
 
 import type { maincardDataType } from "@/constants/maindata";
@@ -5,7 +6,7 @@ import type { maincardDataType } from "@/constants/maindata";
 function Card({ cardlist, btntext, isBtn }: { cardlist: maincardDataType; btntext: string; isBtn?: boolean }) {
   return (
     <li className="card-list-item">
-      <div className="card-img">
+      <div className={styles.card_img}>
         <img className="h-full rounded-2xl" src={cardlist.img} alt="card" />
       </div>
       <div className="card-desc mt-[20px]">
