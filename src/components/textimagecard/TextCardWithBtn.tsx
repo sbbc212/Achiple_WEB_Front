@@ -9,7 +9,7 @@ const TextCardWithBtn = () => {
         <div key={data.id}>
           <p className="text-3xl leading-loose font-bold">{data.title}</p>
           <p className="text-lg text-[#595959]">{data.content}</p>
-          <Linebtn text={data.btntext} />
+          <Linebtn text={data.btntext || ""} />
         </div>
       ))}
     </div>
