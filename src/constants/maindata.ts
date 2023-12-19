@@ -6,7 +6,7 @@ export const topsection = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
-    bt__text: "",
+    bt__text: "상호 작용 및 애니메이션에 대해 알아보기",
   },
   {
     id: "1",
@@ -15,7 +15,7 @@ export const topsection = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
-    bt__text: "",
+    bt__text: "증강 현실 기능 설명",
   },
   {
     id: "2",
@@ -24,7 +24,7 @@ export const topsection = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
-    bt__text: "",
+    bt__text: "링크 복사",
   },
 ];
 export const maintext = [
@@ -35,7 +35,7 @@ export const maintext = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
-    bt__text: "테스트 버튼",
+    bt__text: "더 많은 비즈니스 솔루션을 찾아보세요",
   },
 ];
 export const mainbottom = [
@@ -46,6 +46,7 @@ export const mainbottom = [
     content2:
       " 하나의 플랫폼 내에서 컨셉을 생성, 협업, 전시 및 게시할 수 있습니다. 디자이너, 엔지니어, 제품 관리자, 마케팅 담당자 등 많은 사람들이 Vectary를 사용하여 3D 업계에서 가장 효율적인 브라우저 내, 코드 없는 워크플로우 중 하나로 작업합니다.",
     img: "/img/dummy_img_01.jpg",
+    isBtn: false,
     bt__text: "",
   },
 ];
@@ -103,24 +104,28 @@ export interface textCardType {
   id: string;
   title: string;
   content: string;
+  btnText: string;
 }
 
 export const mainlastsection: textCardType[] = [
   {
     id: "0",
     title: "벡터 스타터",
+    btnText: "시작하다",
     content:
       "기술 세트를 구축하고 3D 디자인의 가능성에 대한 이해를 높일 수 있는 접근 가능한 옵션입니다. 아이디어, 프로젝트, 콘텐츠 협업 및 공유 방법을 시각화하기 위한 새로운 옵션을 소개합니다.",
   },
   {
     id: "1",
     title: "벡터 프로",
+    btnText: "무료 Pro 평가판 시작하기",
     content:
       "  고객이나 외부 파트너에게 컨셉을 전달하는 전문가를 위한 이상적인 계획입니다. Vectary PRO로 최선을 다해 작업해 보세요. 시각적 설명, 몰입형 경험, 실제 디자인 효과를 제공하는 기능에 액세스해 보세요.",
   },
   {
     id: "2",
     title: "벡터사업",
+    btnText: "데모 예약",
     content:
       " 모든 3D 파이프라인에 통합하기 위해 원활한 워크플로우가 필요한 기업을 위한 전문 솔루션입니다. 팀, 프로젝트 및 디자인 플랫폼을 하나로 통합하세요. 3D 디자인을 최대한 활용할 수 있도록 성능이 향상되었습니다.",
   },

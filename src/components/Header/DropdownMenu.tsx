@@ -1,4 +1,5 @@
 import { Dropdown } from "antd";
+import Image from "next/image";
 import Link from "next/link";
 
 import type { menuType } from "./Header";
@@ -17,7 +18,7 @@ const explore: MenuProps = {
     {
       key: "2",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/animation">
           워크스루 & 애니메이션
         </Link>
       ),
@@ -25,7 +26,7 @@ const explore: MenuProps = {
     {
       key: "3",
       label: (
-        <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/reality">
           증강 현실
         </Link>
       ),
@@ -34,14 +35,6 @@ const explore: MenuProps = {
       key: "4",
       label: (
         <Link rel="noopener noreferrer" href="/3dconfigurators">
-          3D Configurators
-        </Link>
-      ),
-    },
-    {
-      key: "5",
-      label: (
-        <Link rel="noopener noreferrer" href="/">
           3D Configurators
         </Link>
       ),
@@ -82,10 +75,10 @@ function DropdownMenu({ item }: { item: menuType }) {
   const items = item.text === "Business" ? Business : explore;
   return (
     <Dropdown key={item.text} menu={items} placement="bottom" arrow>
-      <li className="my-auto cursor-pointer">
-        <div className="text-[1rem]">
+      <li className="my-auto cursor-pointer ">
+        <div className="text-[1rem] flex gap-2">
           {item.text}
-          {item.submenu && <i className="arrow">1</i>}
+          {item.submenu && <Image quality={100} width={16} height={24} alt="icon" src={"/img/arrow.png"} />}
         </div>
       </li>
     </Dropdown>

@@ -1,21 +1,18 @@
 import { configuratordata } from "@/constants/3dconfiguratordata";
-import { carddata } from "@/constants/imagecard";
+import { animationdata } from "@/constants/animation";
 
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 import TextImageCard from "../textimagecard/TextImageCard";
 
 const SectionTwo = () => {
   return (
-    <div>
+    <div className="pt-9">
       {configuratordata.map((data) => (
         <>
-          <div className="pt-9">
+          <div className="pt-[5rem]">
             <SectionTitleAndContent key={data.id} content={data.textdata[3]} />
           </div>
-          <TextImageCard data={carddata} />
-          <TextImageCard data={carddata} />
-          <TextImageCard data={carddata} />
-          <TextImageCard data={carddata} />
+          <TextImageCard data={animationdata} />
         </>
       ))}
     </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 import type { titleAndContent } from "@/constants/3dconfiguratordata";
 
 const SectionTitleAndContent = ({ content }: { content: titleAndContent }) => {

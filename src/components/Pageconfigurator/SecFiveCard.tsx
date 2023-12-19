@@ -1,5 +1,3 @@
-import React from "react";
-
 import ThreeCardGroup from "./ThreeCardGroup";
 
 import type { maincardDataType } from "@/constants/maindata";

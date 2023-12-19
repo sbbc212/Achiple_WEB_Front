@@ -29,7 +29,7 @@ function Footer() {
               <ul>
                 {data.title.map((datatitle) => (
                   <li key={datatitle.id}>
-                    <a className="text-[#949494]" href="#">
+                    <a className="text-[#949494]" href={datatitle.link}>
                       {datatitle.title}
                     </a>
                   </li>
