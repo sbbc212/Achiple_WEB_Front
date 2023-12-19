@@ -7,9 +7,9 @@ const ThreeCardGroup = ({ content }: { content: maincardDataType[] }) => {
     <>
       {content.map((cardlist, index) =>
         cardlist.btnText === "" ? (
-          <Card isBtn={true} key={index} cardlist={cardlist} btntext={"btnText"} />
+          <Card isBtn={true} key={index} cardlist={cardlist} btntext={cardlist.btnText} />
         ) : (
-          <Card key={index} cardlist={cardlist} btntext={"btnText"} />
+          <Card key={index} cardlist={cardlist} btntext={cardlist.btnText} />
         ),
       )}
     </>
