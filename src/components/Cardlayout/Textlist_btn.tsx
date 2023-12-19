@@ -8,7 +8,7 @@ function Textlist_btn() {
       <div className="page-tit text-center py-[60px]">
         <h3 className="text-[48px] font-medium">다이빙할 준비가 되셨나요?</h3>
       </div>
-      <ul className="flex justify-between pb-[60px]">
+      <ul className="flex justify-between pb-[60px] gap-5">
         {mainlastsection.map((lastsection) => (
           <TextCard key={lastsection.id} text={lastsection} btnType={true} btnText={lastsection.btnText} />
         ))}
