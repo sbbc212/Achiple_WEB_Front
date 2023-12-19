@@ -4,10 +4,12 @@ import type { textCardType } from "@/constants/maindata";
 
 function TextCardList({ textCardData }: { textCardData: textCardType[] }) {
   return (
-    <div className="layout flex justify-evenly">
-      {textCardData.map((item: textCardType) => (
-        <TextCard text={item} key={item.id} btnType={false} btnText={""} />
-      ))}
+    <div>
+      <ul className="flex justify-between py-[32px] gap-5">
+        {textCardData.map((item: textCardType) => (
+          <TextCard key={item.id} text={item} btnType={false} btnText={""} />
+        ))}
+      </ul>
     </div>
   );
 }

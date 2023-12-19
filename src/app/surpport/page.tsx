@@ -13,7 +13,7 @@ export default function Surpport() {
   return (
     <div className="layout">
       <SectionTitleAndContent content={data} />
-      <div className=" lex justify-center items-center">
+      <div className="flex justify-center items-center">
         <ListCard />
       </div>
     </div>
