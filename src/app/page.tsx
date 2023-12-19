@@ -18,7 +18,7 @@ export default function Home() {
         <PageSection content={topsection} />
         <Textlist />
         <Cardlist maincardData={maincardData} btnText={"시작하기"} />
-        <PageSection content={mainbottom} />
+        <PageSection content={mainbottom} isBtn={true} />
       </div>
       <Full />
       <div className="layout">

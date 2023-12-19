@@ -9,10 +9,8 @@ import TextImageCard from "../textimagecard/TextImageCard";
 const SectionFour = () => {
   return (
     <>
-      <>
-        <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
-        <TextImageCard data={carddata.slice(0, 1)} />
-      </>
+      <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+      <TextImageCard data={carddata.slice(0, 1)} />
     </>
   );
 };
