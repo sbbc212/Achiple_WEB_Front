@@ -1,5 +1,6 @@
 import RealityTextCard from "./RealityTextCard";
 import Linebtn from "../Button/Linebtn";
+import TextCard from "../Cardlayout/TextCard";
 import SectionImage from "../Section/SectionImage";
 import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 
@@ -18,7 +19,15 @@ const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem; textcardd
         </div>
       )}
       <SectionImage sectionimg={data.img || ""} />
-      <RealityTextCard realitytextdata={textcarddata} />
+      {textcarddata[0]?.cardtype ? (
+        <div className="flex justify-center space-x-11 pt-10 text-lg">
+          {textcarddata.map((data, i) => (
+            <TextCard key={data.id} text={textcarddata[i]} btnType={false} btnText={""} />
+          ))}
+        </div>
+      ) : (
+        <RealityTextCard realitytextdata={textcarddata} />
+      )}
     </div>
   );
 };
