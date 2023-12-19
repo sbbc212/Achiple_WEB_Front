@@ -1,4 +1,5 @@
 .tabMenu {
+<<<<<<< HEAD
     color: #000;
     display: flex;
     justify-content: center;
@@ -19,3 +20,26 @@
 .tabContent {
     color: #000;
 }
+=======
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.tabMenu li {
+  cursor: pointer;
+  border: 1px solid #efefef;
+  color: #949494;
+  padding: 0.675rem 2.4rem;
+}
+
+.tabMenu li.active {
+  color: #2aa86b;
+  background-color: #efefef;
+}
+
+.tabContent {
+  color: #000;
+}
+>>>>>>> develop

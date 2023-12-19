@@ -2,22 +2,23 @@ import Full from "@/components/Banner/Full";
 import Cardlist from "@/components/Cardlayout/Cardlist";
 import Textlist from "@/components/Cardlayout/Textlist";
 import Textlist_btn from "@/components/Cardlayout/Textlist_btn";
-import Page_section from "@/components/Section/Page_section";
-import Page_top_section from "@/components/Section/Page_top_section";
+import PageSection from "@/components/Section/PageSection";
+import PageTopSection from "@/components/Section/PageTopSection";
+import { data, mainbottom, maincardData, maintext, topsection } from "@/constants/maindata";
 
 export default function Home() {
   return (
     <div className="w-full">
       <div className="layout">
-        <Page_top_section />
-        <Page_section type="maintop" />
+        <PageTopSection data={data} />
+        <PageSection content={maintext} />
       </div>
       <Full />
       <div className="layout">
-        <Page_section type="topsection" />
+        <PageSection content={topsection} />
         <Textlist />
-        <Cardlist />
-        <Page_section type="mainbottom" />
+        <Cardlist maincardData={maincardData} btnText={"시작하기"} />
+        <PageSection content={mainbottom} isBtn={true} />
       </div>
       <Full />
       <div className="layout">

@@ -1,4 +1,20 @@
+import Link from "next/link";
+
+import DropdownMenu from "./DropdownMenu";
+
 import "./style.css";
+
+export interface menuType {
+  text: string;
+  href?: string;
+  submenu?: boolean;
+}
+const menuItems: menuType[] = [
+  { text: "Studio", href: "/studio" },
+  { text: "Explore", submenu: true },
+  { text: "Business", submenu: true },
+  { text: "pricing", href: "/pricing" },
+];
 
 function Header() {
   return (
@@ -6,46 +22,41 @@ function Header() {
       <div className="layout">
         <nav className="h-[88px] flex justify-between items-center ">
           <div className="logo" style={{ width: "200px", cursor: "pointer" }}>
-            <a href="/">
+            <Link href="/">
               <img src="./img/logo.png" alt="아키플 스튜디오 로고" />
-            </a>
+            </Link>
           </div>
           <div className="gnb">
             <ul className="flex gap-[24px]">
-              <li>
-                <a className="text-[1rem]" href="#">
-                  Studio
-                </a>
-              </li>
-              <li>
-                <a className="text-[1rem] flex items-center gap-1" href="#">
-                  Explore
-                  <i className="arrow">
-                    <img src="img/Vector_arrow.png" alt="화살표" />
-                  </i>
-                </a>
-                <ul className="deep-menu"></ul>
-              </li>
-              <li>
-                <a className="text-[1rem] flex items-center gap-1" href="#">
-                  Business
-                  <i className="arrow">
-                    <img src="img/Vector_arrow.png" alt="화살표" />
-                  </i>
-                </a>
-                <ul className="deep-menu"></ul>
-              </li>
-              <li>
-                <a className="text-[1rem]" href="/Pricing">
-                  Pricing
-                </a>
-              </li>
+              {menuItems.map((item) =>
+                item.submenu === true ? (
+                  <DropdownMenu key={item.text} item={item} />
+                ) : (
+                  <li key={item.text}>
+                    {item.href ? (
+                      <Link className="text-[1rem]" href={item.href!}>
+                        {item.text}
+                        {item.submenu && <i className="arrow">1</i>}
+                      </Link>
+                    ) : (
+                      <div>
+                        {item.text}
+                        {item.submenu && <i className="arrow">1</i>}
+                      </div>
+                    )}
+                  </li>
+                ),
+              )}
             </ul>
           </div>
           <div className="user-wrap">
             <div className="flex gap-[12px]">
-              <button className="login">Login</button>
-              <button className="sign">SignUp</button>
+              <Link href="/signin">
+                <button className="login">Login</button>
+              </Link>
+              <Link href="/signup">
+                <button className="sign">SignUp</button>
+              </Link>
             </div>
           </div>
         </nav>

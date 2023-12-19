@@ -1,0 +1,15 @@
+import TextCard from "../Cardlayout/TextCard";
+
+import type { textCardType } from "@/constants/maindata";
+
+const RealityTextCard = ({ realitytextdata }: { realitytextdata: textCardType[] }) => {
+  return (
+    <div className="flex justify-between pb-9 pt-9">
+      {realitytextdata.map((item) => (
+        <TextCard key={item.id} text={item} btnType={false} btnText={""} />
+      ))}
+    </div>
+  );
+};
+
+export default RealityTextCard;

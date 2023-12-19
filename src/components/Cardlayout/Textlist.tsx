@@ -1,5 +1,3 @@
-import React from "react";
-
 import { main } from "@/constants/maindata";
 
 import Fillbtn from "../Button/Fillbtn";
@@ -19,7 +17,7 @@ function Textlist() {
         ))}
       </ul>
       <div className="text-center py-[60px]">
-        <Fillbtn />
+        <Fillbtn text="지금 시작해보세요." />
       </div>
     </div>
   );
