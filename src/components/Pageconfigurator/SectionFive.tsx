@@ -16,7 +16,7 @@ const SectionFive = () => {
   return (
     <>
       <div className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
-        <SectionTitleAndContent content={configuratordata[0].textdata[4]} />
+        <SectionTitleAndContent content={configuratordata[0].textdata[3]} />
       </div>
       {ThreeLengthData.map((item, i) => (
         <ul key={item[i].id} className="flex text-start justify-between pb-[60px]">
