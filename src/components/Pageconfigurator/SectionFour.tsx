@@ -9,7 +9,9 @@ import TextImageCard from "../textimagecard/TextImageCard";
 const SectionFour = () => {
   return (
     <>
-      <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+      <div className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
+        <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+      </div>{" "}
       <TextImageCard data={carddata.slice(0, 1)} />
     </>
   );

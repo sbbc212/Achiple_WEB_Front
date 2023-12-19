@@ -15,7 +15,9 @@ const SectionThree = () => {
   }
   return (
     <div className="flex flex-col text-center">
-      <SectionTitleAndContent content={configuratordata[0].textdata[4]} />
+      <div className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
+        <SectionTitleAndContent content={configuratordata[0].textdata[4]} />
+      </div>
       {ThreeLengthData.map((item, i) => (
         <ul key={item[i].id} className="flex text-start justify-between pb-[60px]">
           <ThreeCardGroup content={item} />
