@@ -1,13 +1,13 @@
-import { configuratordata } from "@/constants/3dconfiguratordata";
-
 import CardContent from "../Cardlayout/CardContent";
 import CardImage from "../Cardlayout/CardImage";
 import CardTitle from "../Cardlayout/CardTitle";
 
-const SectionCard = () => {
+import type { ConfiguratorDataItem } from "@/constants/3dconfiguratordata";
+
+const SectionCard = ({ content }: { content: ConfiguratorDataItem[] }) => {
   return (
     <ul className="flex justify-between pb-[60px]">
-      {configuratordata.map((data) =>
+      {content.map((data) =>
         data.seccardcontent.map((content) => (
           <li key={content.secsubtitle} className="card-list-item">
             <CardImage cardImg={content.img} />

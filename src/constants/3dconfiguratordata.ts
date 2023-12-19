@@ -27,6 +27,80 @@ export interface ConfiguratorDataItem {
   cardcontent: maincardDataType[];
   seccardcontent: SecCardContent[];
 }
+export const configuratorcardData: maincardDataType[] = [
+  {
+    id: "0",
+    subtitle: "산업1",
+    secSubtitle: "패션1",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기1",
+  },
+  {
+    id: "1",
+    subtitle: "산업2",
+    secSubtitle: "패션2",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기2",
+  },
+  {
+    id: "2",
+    subtitle: "산업3",
+    secSubtitle: "패션3",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기3",
+  },
+  {
+    id: "3",
+    subtitle: "산업1",
+    secSubtitle: "패션1",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기1",
+  },
+  {
+    id: "4",
+    subtitle: "산업2",
+    secSubtitle: "패션2",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기2",
+  },
+  {
+    id: "5",
+    subtitle: "산업3",
+    secSubtitle: "패션3",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기3",
+  },
+  {
+    id: "6",
+    subtitle: "산업1",
+    secSubtitle: "패션1",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기1",
+  },
+  {
+    id: "7",
+    subtitle: "산업2",
+    secSubtitle: "패션2",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기2",
+  },
+  {
+    id: "8",
+    subtitle: "산업3",
+    secSubtitle: "패션3",
+    content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
+    img: "/img/dummy_img_02.jpg",
+    btnText: "데모보기3",
+  },
+];
 export const configuratordata: ConfiguratorDataItem[] = [
   {
     id: "0",
