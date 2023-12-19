@@ -9,7 +9,7 @@ import type { textCardType } from "@/constants/maindata";
 
 const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem; textcarddata: textCardType[] }) => {
   return (
-    <div className="layout flex-col flex justify-center">
+    <div className=" flex-col flex justify-center">
       <SectionTitleAndContent content={data} />
       {data.datatype === "nobtn" ? (
         ""

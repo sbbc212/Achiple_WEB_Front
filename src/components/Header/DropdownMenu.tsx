@@ -10,21 +10,13 @@ const explore: MenuProps = {
     {
       key: "1",
       label: (
-        <Link rel="noopener noreferrer" href="/arichiplestudio">
-          아키플스튜디오
-        </Link>
-      ),
-    },
-    {
-      key: "2",
-      label: (
         <Link rel="noopener noreferrer" href="/animation">
           워크스루 & 애니메이션
         </Link>
       ),
     },
     {
-      key: "3",
+      key: "2",
       label: (
         <Link rel="noopener noreferrer" href="/reality">
           증강 현실
@@ -32,7 +24,7 @@ const explore: MenuProps = {
       ),
     },
     {
-      key: "4",
+      key: "3",
       label: (
         <Link rel="noopener noreferrer" href="/3dconfigurators">
           3D Configurators
@@ -40,7 +32,7 @@ const explore: MenuProps = {
       ),
     },
     {
-      key: "6",
+      key: "4",
       label: (
         <Link rel="noopener noreferrer" href="/importfile">
           캐드 가져오기
@@ -78,7 +70,7 @@ function DropdownMenu({ item }: { item: menuType }) {
       <li className="my-auto cursor-pointer ">
         <div className="text-[1rem] flex gap-2">
           {item.text}
-          {item.submenu && <Image quality={100} width={16} height={24} alt="icon" src={"/img/arrow.png"} />}
+          {item.submenu && <Image quality={100} width={14} height={14} alt="icon" src={"/img/arrow.png"} />}
         </div>
       </li>
     </Dropdown>
