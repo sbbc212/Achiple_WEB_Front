@@ -2,7 +2,7 @@ import Linebtn from "../Button/Linebtn";
 
 function BgBanner() {
   return (
-    <div style={{ marginBottom: "60px" }} className=" text-white rounded-lg h-[400px] ">
+    <div style={{ marginBottom: "60px", marginTop: "60px" }} className=" text-white rounded-lg h-[400px] ">
       <div
         className="layout h-full bg-cover bg-no-repeat bg-center flex justify-center flex-col items-center gap-y-8 rounded-[10px] overflow-hidden"
         style={{ backgroundImage: `url('/img/dummy_img_01.jpg')` }}>
