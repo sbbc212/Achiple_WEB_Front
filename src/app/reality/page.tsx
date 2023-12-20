@@ -5,7 +5,6 @@ import SectionFour from "@/components/Pageconfigurator/SectionFour";
 import RealitySecEight from "@/components/Reality/RealitySecEight";
 import RealitySecFive from "@/components/Reality/RealitySecFive";
 import RealitySecFour from "@/components/Reality/RealitySecFour";
-import RealitySecNine from "@/components/Reality/RealitySecNine";
 import PageSection from "@/components/Section/PageSection";
 import PageTopSection from "@/components/Section/PageTopSection";
 import { realitypagecard } from "@/constants/imagecard";
@@ -27,7 +26,9 @@ const page = () => {
       </div>
       <Full />
       <RealitySecEight data={realityseceight[0]} textcarddata={seceighttext.slice(0, 3)} />
-      <RealitySecNine />
+      <div className="py-[60px]">
+        <RealitySecEight data={realityseceight[1]} secondtitle={realityseceight[1]} textcarddata={seceighttext.slice(0, 3)} />
+      </div>
       <BgBanner />
     </>
   );

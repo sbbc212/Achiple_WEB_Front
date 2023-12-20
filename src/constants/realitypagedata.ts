@@ -129,13 +129,31 @@ export const realitytextdata: TextDataItem[] = [
     datatype: "imgleft",
   },
 ];
-export const realityseceight = [
+export const realityseceight: TextDataItem[] = [
   {
     id: "section1",
     title: "나만의 3D 구성 프로그램 만들기",
     content: "코드가 없습니다. Vectary에서 미리 만들어진 요소로 UI를 설정합니다. 메뉴, 기능 및 트리거를 디자인합니다. 몇 분 안에 준비됩니다.",
     btnText: "30일 무료 평가판을 시작하세요",
     datatype: "nobtn",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f711f1f9709d68d9de08de_bag%20-%203d%20configurator%20vectary-p-2000.jpeg",
+  },
+  {
+    id: "secondtitle",
+    title: "나만의 3D 구성 프로그램 만들기",
+    content: "코드가 없습니다. Vectary에서 미리 만들어진 요소로 UI를 설정합니다. 메뉴, 기능 및 트리거를 디자인합니다. 몇 분 안에 준비됩니다.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    datatype: "nobtn",
+    secondtitle: "true",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f711f1f9709d68d9de08de_bag%20-%203d%20configurator%20vectary-p-2000.jpeg",
+  },
+  {
+    id: "secondtitle",
+    title: "나만의 3D 구성 프로그램 만들기",
+    content: "코드가 없습니다. Vectary에서 미리 만들어진 요소로 UI를 설정합니다. 메뉴, 기능 및 트리거를 디자인합니다. 몇 분 안에 준비됩니다.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    datatype: "nobtn",
+    secondtitle: "true",
     img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f711f1f9709d68d9de08de_bag%20-%203d%20configurator%20vectary-p-2000.jpeg",
   },
 ];
