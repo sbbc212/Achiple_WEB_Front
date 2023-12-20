@@ -19,6 +19,7 @@ const RealitySecEight = ({ data, secondtitle, textcarddata }: { secondtitle?: Te
         </div>
       )}
       <SectionImage sectionimg={data.img || ""} />
+      <div></div>
       {data.secondtitle === "true" && (
         <div className="section-tit text-center pt-[6rem]" style={{ padding: "30px 60px 0 60px" }}>
           <SectionTitleAndContent content={secondtitle} />
