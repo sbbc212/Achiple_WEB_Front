@@ -35,7 +35,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업1",
     secSubtitle: "패션1",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기1",
   },
   {
@@ -43,7 +43,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업2",
     secSubtitle: "패션2",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기2",
   },
   {
@@ -51,7 +51,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업3",
     secSubtitle: "패션3",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기3",
   },
   {
@@ -59,7 +59,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업1",
     secSubtitle: "패션4",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기1",
   },
   {
@@ -67,7 +67,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업2",
     secSubtitle: "패션5",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기2",
   },
   {
@@ -75,7 +75,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업3",
     secSubtitle: "패션6",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기3",
   },
   {
@@ -83,7 +83,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업1",
     secSubtitle: "패션7",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기1",
   },
   {
@@ -91,7 +91,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업2",
     secSubtitle: "패션8",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기2",
   },
   {
@@ -99,7 +99,7 @@ export const configuratorcardData: maincardDataType[] = [
     subtitle: "산업3",
     secSubtitle: "패션9",
     content: "내부 사용, 매장 내 및 온라인 소매를 위한 몰입형 제품 쇼케이스를 위한 다목적 디자인 솔루션입니다.",
-    img: "/img/dummy_img_02.jpg",
+    img: "https://assets-global.website-files.com/636cc984003871e3cda597bb/64f713a90d726d1f17d3c4c4_packaging%20-%203d%20configurator%20vectary-p-500.jpeg",
     btnText: "데모보기3",
   },
 ];
