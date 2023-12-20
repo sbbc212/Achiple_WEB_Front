@@ -9,7 +9,7 @@ import type { textCardType } from "@/constants/maindata";
 
 const RealitySecEight = ({ data, secondtitle, textcarddata }: { secondtitle?: TextDataItem; data: TextDataItem; textcarddata: textCardType[] }) => {
   return (
-    <div className="flex-col flex justify-center">
+    <div className="flex-col flex justify-center layout">
       <SectionTitleAndContent content={data} />
       {data.datatype === "nobtn" ? (
         ""
@@ -32,7 +32,9 @@ const RealitySecEight = ({ data, secondtitle, textcarddata }: { secondtitle?: Te
           ))}
         </div>
       ) : (
-        <RealityTextCard realitytextdata={textcarddata} />
+        <div className="my-[60px]">
+          <RealityTextCard realitytextdata={textcarddata} />
+        </div>
       )}
     </div>
   );

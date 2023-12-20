@@ -20,9 +20,11 @@ function PageSection({ content, isBtn }: { content: datatype[]; isBtn?: boolean 
     <div className="contant py-[60px]">
       {content.map((item, index) => (
         <>
-          <div key={index} className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
+          <div key={index} className=" text-center mb-[60px]">
             <SectionKeyword sectionkeyword={item.title} />
-            <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+            <div className="py-6">
+              <SectionTitleAndContent content={configuratordata[0].textdata[2]} />
+            </div>
             {!isBtn && (index === 2 ? <Fillbtn text={item.bt__text} /> : <Linebtn text={item.bt__text} />)}
           </div>
           <SectionImage sectionimg={item.img} />
