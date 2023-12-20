@@ -5,7 +5,7 @@ import type { CarddataType } from "@/constants/imagecard";
 
 const TextImageCard = ({ data }: { data: CarddataType[] }) => {
   return (
-    <div className="py-[60px]">
+    <>
       {data.map((content: CarddataType) => (
         <div key={content.title}>
           <div className={`${content.type === "imgleft" ? "flex" : "flex flex-row-reverse"} items-center py-[50px] justify-around`}>
@@ -14,7 +14,7 @@ const TextImageCard = ({ data }: { data: CarddataType[] }) => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 export default TextImageCard;
