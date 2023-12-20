@@ -25,7 +25,9 @@ const page = () => {
         <SectionFour textimgcard={realitypagecard.slice(1, 3)} titlecontent={realitytextdata[4]} />
       </div>
       <Full />
-      <RealitySecEight data={realityseceight[0]} textcarddata={seceighttext.slice(0, 3)} />
+      <div className="pt-[60px]">
+        <RealitySecEight data={realityseceight[0]} textcarddata={seceighttext.slice(0, 3)} />
+      </div>
       <div className="py-[60px]">
         <RealitySecEight data={realityseceight[1]} secondtitle={realityseceight[1]} textcarddata={seceighttext.slice(0, 3)} />
       </div>
