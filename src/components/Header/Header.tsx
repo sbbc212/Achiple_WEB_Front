@@ -1,4 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import useRender from "@/hooks/useRender";
 
 import DropdownMenu from "./DropdownMenu";
 
@@ -17,7 +22,12 @@ const menuItems: menuType[] = [
 ];
 
 function Header() {
-  return (
+  const pathname = usePathname();
+
+  const isrender = useRender(pathname);
+  console.log(isrender);
+
+  return isrender === false ? null : (
     <div className="w-full h-[88px] px-[2rem]">
       <div className="layout">
         <nav className="h-[88px] flex justify-between items-center ">
