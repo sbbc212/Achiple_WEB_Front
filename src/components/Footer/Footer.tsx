@@ -26,7 +26,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="text-[#949494]" href="/surpport">
+                <Link className="text-[#949494]" href="/surpport/mail">
                   문의
                 </Link>
               </li>
