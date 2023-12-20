@@ -16,9 +16,8 @@ export const realitytitle: titleAndContent[] = [
   },
   {
     id: "studio2",
-    title: "청중에게 감동을 주고 영향력을 창출하세요reality",
-    content:
-      "아이디어부터 최종 컨셉까지 모든 제품 버전을 웹에 표시합니다. 시청자의 관심을 사로잡고 메인 쇼케이스를 가리지 않으면서 다양한 정보를 공개하세요. 맞춤형 브랜딩을 추가하세요. 채팅에서 열거나 온라인 어디든 삽입할 수 있는 하나의 링크를 보내 공유하세요.1",
+    title: "모든 기기에서 작동하는 증강현실 기술1",
+    content: "",
   },
   {
     id: "studio3",
@@ -143,9 +142,32 @@ export const realityseceight = [
 export const seceighttext: textCardType[] = [
   {
     id: "0",
-    title: "벡터 스타터reality0",
-    content:
-      "기술 세트를 구축하고 3D 디자인의 가능성에 대한 이해를 높일 수 있는 접근 가능한 옵션입니다. 아이디어, 프로젝트, 콘텐츠 협업 및 공유 방법을 시각화하기 위한 새로운 옵션을 소개합니다.",
+    title: "데스크톱 브라우저에서reality0",
+    content: "데스크탑 브라우저에서 사실적인 3D 구성을 보고, 확대/축소하고 회전하고 모바일 AR로 원활하게 전환할 수 있습니다.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    textgray: "true",
+  },
+  {
+    id: "1",
+    title: "Android 기기의 경우",
+    content: "Vectary Web AR은 Apple의 최신 ARKit 3를 활용하여 iPhone 및 iPad에서 몰입형 AR 경험을 만들어냅니다.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    textgray: "true",
+  },
+  {
+    id: "2",
+    title: "Android 기기의 경우",
+    content: "Vectary Web AR은 Apple의 최신 ARKit 3를 활용하여 iPhone 및 iPad에서 몰입형 AR 경험을 만들어냅니다.",
+    btnText: "30일 무료 평가판을 시작하세요",
+    textgray: "true",
+  },
+];
+
+export const secfivetext: textCardType[] = [
+  {
+    id: "0",
+    title: "Android 기기의 경우2",
+    content: "데스크탑 브라우저에서 사실적인 3D 구성을 보고, 확대/축소하고 회전하고 모바일 AR로 원활하게 전환할 수 있습니다.",
     btnText: "30일 무료 평가판을 시작하세요",
   },
   {
