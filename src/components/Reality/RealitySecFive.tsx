@@ -8,7 +8,9 @@ const RealitySecFive = () => {
     <div className="py-[60px]">
       <SectionTitleAndContent content={realitytitle[0]} />
       <RealityTextCard realitytextdata={secfivetext.slice(0, 3)} />
-      <RealityTextCard realitytextdata={secfivetext.slice(3, 6)} />
+      <div className="py-11">
+        <RealityTextCard realitytextdata={secfivetext.slice(3, 6)} />
+      </div>
     </div>
   );
 };
