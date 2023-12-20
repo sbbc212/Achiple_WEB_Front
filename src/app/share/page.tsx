@@ -16,7 +16,7 @@ const page = () => {
         </div>
       </div>
       <Full />
-      <div className="layout pt-[60px]">
+      <div className="layout">
         <RealitySecEight data={sharetextdata[0]} secondtitle={sharetextdata[1]} textcarddata={sharethreetextcard} />
         <div className="py-[5rem]">
           <TextBanner />
