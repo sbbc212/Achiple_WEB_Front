@@ -6,10 +6,10 @@ import RealitySecEight from "@/components/Reality/RealitySecEight";
 import RealitySecFive from "@/components/Reality/RealitySecFive";
 import RealitySecFour from "@/components/Reality/RealitySecFour";
 import RealitySecNine from "@/components/Reality/RealitySecNine";
-import RealitySecThree from "@/components/Reality/RealitySecThree";
+import PageSection from "@/components/Section/PageSection";
 import PageTopSection from "@/components/Section/PageTopSection";
 import { realitypagecard } from "@/constants/imagecard";
-import { realitymaindata, realityseceight, realitytextdata, seceighttext } from "@/constants/realitypagedata";
+import { realitymaindata, realityseceight, realitytextdata, realitytoptext, seceighttext } from "@/constants/realitypagedata";
 
 const page = () => {
   return (
@@ -20,7 +20,7 @@ const page = () => {
           <TextBanner />
         </div>
         <SectionFour textimgcard={realitypagecard} titlecontent={realitytextdata[4]} />
-        <RealitySecThree />
+        <PageSection content={realitytoptext} />
         <RealitySecFour />
         <RealitySecFive />
         <SectionFour textimgcard={realitypagecard.slice(1, 3)} titlecontent={realitytextdata[4]} />

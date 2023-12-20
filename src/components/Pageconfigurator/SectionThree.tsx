@@ -23,7 +23,7 @@ const SectionThree = () => {
           <ThreeCardGroup content={item} />
         </ul>
       ))}
-      <div>
+      <div className="py-[3rem]">
         <Linebtn text={"Archiple 도움말 섹션에서 자세히 알아보세요."} />
       </div>
     </div>

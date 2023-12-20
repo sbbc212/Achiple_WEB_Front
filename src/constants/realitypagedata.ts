@@ -11,8 +11,8 @@ export const realitymaindata = {
 export const realitytitle: titleAndContent[] = [
   {
     id: "studio1",
-    title: "나만의 3D 구성 프로그램 만들기reality",
-    content: "코드가 없습니다. Vectary에서 미리 만들어진 요소로 UI를 설정합니다. 메뉴, 기능 및 트리거를 디자인합니다. 몇 분 안에 준비됩니다.",
+    title: "증강 현실 예시",
+    content: "",
   },
   {
     id: "studio2",
