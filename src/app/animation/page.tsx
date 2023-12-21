@@ -1,4 +1,3 @@
-import SectionThree from "@/components/Animation/SectionThree";
 import BgBanner from "@/components/Banner/BgBanner";
 import SectionFour from "@/components/Pageconfigurator/SectionFour";
 import RealitySecEight from "@/components/Reality/RealitySecEight";
@@ -7,13 +6,16 @@ import { animationdata, animationsecfour, animationtextdata, animationtop, secfo
 
 const page = () => {
   return (
-    <div className="layout">
-      <PageTopSection data={animationtop} />
-      <SectionFour textimgcard={animationdata} titlecontent={animationtextdata[1]} />
-      <SectionThree />
+    <>
+      <div className="layout">
+        <PageTopSection data={animationtop} />
+        <div className="py-[60px]">
+          <SectionFour textimgcard={animationdata} titlecontent={animationtextdata[1]} />
+        </div>
+      </div>
       <RealitySecEight data={animationsecfour[0]} textcarddata={secfourtext} />
       <BgBanner />
-    </div>
+    </>
   );
 };
 
