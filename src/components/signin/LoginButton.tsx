@@ -15,7 +15,7 @@ const LoginButton = () => {
       <Form.Item>
         <Button
           htmlType="submit"
-          style={{ padding: "1.6rem", lineHeight: 0, background: "#26af66", display: "block", width: "100%", color: "#fff" }}
+          style={{ padding: "1.6rem", lineHeight: 0, background: "#26af66", display: "block", width: "100%", color: "#fff", border: "none" }}
           className="completion-btn">
           로그인
         </Button>
