@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import useRender from "@/hooks/useRender";
 
@@ -15,9 +14,7 @@ export interface menuType {
 }
 
 function Header() {
-  const pathname = usePathname();
-
-  const isrender = useRender(pathname);
+  const isrender = useRender();
 
   return isrender === false ? null : (
     <nav className="layout w-full h-[88px] px-[2rem] flex justify-between items-center ">
