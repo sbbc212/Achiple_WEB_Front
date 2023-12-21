@@ -36,7 +36,7 @@ const AgreementBtn = ({ check }: AgreementBtnProps) => {
         <Button onClick={clickCancel} style={{ padding: "1.2rem 2rem", lineHeight: 0, backgroundColor: "#EFEFEF" }} type="link" htmlType="submit">
           취소
         </Button>
-        <Button style={{ padding: "1.2rem 2rem", lineHeight: 0 }} type="primary" onClick={clickSignup}>
+        <Button style={{ padding: "1.2rem 2rem", lineHeight: 0, display: "block", background: "#26af66", color: "#fff" }} onClick={clickSignup}>
           다음
         </Button>
       </div>
