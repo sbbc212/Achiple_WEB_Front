@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from "react";
 
-function useRender(pathname: string) {
+import { usePathname } from "next/navigation";
+
+function useRender() {
+  const pathname = usePathname();
   const [isSignInPage, setIsSignInPage] = useState(false);
 
   useEffect(() => {
