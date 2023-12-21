@@ -13,7 +13,12 @@ const LoginButton = () => {
   return (
     <div className="py-[1.2rem]">
       <Form.Item>
-        <Button style={{ padding: "1.6rem", lineHeight: 0 }} type="primary" htmlType="submit" className="btn btn-primary login-form-button" block>
+        <Button
+          style={{ padding: "1.6rem", lineHeight: 0 }}
+          type="primary"
+          htmlType="submit"
+          className="btn btn-primary login-form-button completion-btn"
+          block>
           로그인
         </Button>
       </Form.Item>
