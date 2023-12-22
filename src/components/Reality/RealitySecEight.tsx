@@ -7,9 +7,19 @@ import SectionTitleAndContent from "../Section/SectionTitleAndContent";
 import type { TextDataItem } from "@/constants/3dconfiguratordata";
 import type { textCardType } from "@/constants/maindata";
 
-const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem; textcarddata: textCardType[] }) => {
+const RealitySecEight = ({
+  data,
+  secondtitle,
+  textcarddata,
+  secondtextcard,
+}: {
+  secondtitle?: TextDataItem;
+  data: TextDataItem;
+  textcarddata: textCardType[];
+  secondtextcard?: textCardType[];
+}) => {
   return (
-    <div className="flex-col flex justify-center">
+    <div className="flex-col flex justify-center layout">
       <SectionTitleAndContent content={data} />
       {data.datatype === "nobtn" ? (
         ""
@@ -19,15 +29,24 @@ const RealitySecEight = ({ data, textcarddata }: { data: TextDataItem; textcardd
         </div>
       )}
       <SectionImage sectionimg={data.img || ""} />
-      {textcarddata[0]?.cardtype ? (
+      {data.secondtitle === "true" && (
+        <div className="section-tit text-center pt-[6rem]">
+          <SectionTitleAndContent content={secondtitle} />
+        </div>
+      )}
+
+      {textcarddata[0]?.cardtype === "twocard" ? (
         <div className="flex justify-center space-x-11 pt-10 text-lg">
           {textcarddata.map((data, i) => (
             <TextCard key={data.id} text={textcarddata[i]} btnType={false} btnText={""} />
           ))}
         </div>
       ) : (
-        <RealityTextCard realitytextdata={textcarddata} />
+        <div className="pt-11 pb-5">
+          <RealityTextCard realitytextdata={textcarddata} />
+        </div>
       )}
+      {secondtextcard && secondtextcard[0].cardtype === "secondline" && <RealityTextCard realitytextdata={secondtextcard} />}
     </div>
   );
 };

@@ -8,10 +8,10 @@ import type { textCardType } from "@/constants/maindata";
 
 function ImgAndTextCard({ ImgTextData, textCardData, isBtn }: { ImgTextData: datatype; textCardData: textCardType[]; isBtn: boolean }) {
   return (
-    <div>
+    <>
       <PageSectionframe data={ImgTextData} isBtn={isBtn} />
       <TextCardList textCardData={textCardData} />
-    </div>
+    </>
   );
 }
 

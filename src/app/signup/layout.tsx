@@ -4,7 +4,7 @@ import SignupProvider from "@/components/sigin-up/SignupProvider";
 
 function SignUpLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="layout">
       <SignupProvider>{children}</SignupProvider>
     </div>
   );

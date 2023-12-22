@@ -8,6 +8,14 @@ import type { MenuProps } from "antd";
 const explore: MenuProps = {
   items: [
     {
+      key: "4",
+      label: (
+        <Link rel="noopener noreferrer" href="/share">
+          공유하기
+        </Link>
+      ),
+    },
+    {
       key: "1",
       label: (
         <Link rel="noopener noreferrer" href="/animation">

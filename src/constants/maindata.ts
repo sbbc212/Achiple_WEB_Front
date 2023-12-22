@@ -108,6 +108,7 @@ export interface textCardType {
   content: string;
   btnText: string;
   cardtype?: string;
+  textgray?: string;
 }
 
 export const mainlastsection: textCardType[] = [

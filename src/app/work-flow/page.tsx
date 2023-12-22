@@ -55,7 +55,7 @@ function page() {
         <Cardlist maincardData={workFlowCardData} isBtn={true} />
       </div>
       <Full />
-      <section className="layout space-y-10">
+      <section className="layout">
         <ImgAndTextCard ImgTextData={ImgTextData} textCardData={workFlowTextCardData} isBtn={false} />
         <BgBanner />
       </section>

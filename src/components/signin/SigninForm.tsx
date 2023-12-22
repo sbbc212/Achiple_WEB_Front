@@ -67,6 +67,11 @@ const SigninForm = () => {
           colorPrimary: "#26AF66",
           borderRadius: 0,
         },
+        components: {
+          Form: {
+            itemMarginBottom: 12,
+          },
+        },
       }}>
       <Form
         // form={form}

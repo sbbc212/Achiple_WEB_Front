@@ -4,8 +4,7 @@ import SectionFour from "@/components/Pageconfigurator/SectionFour";
 import SectionThree from "@/components/Pageconfigurator/SectionThree";
 import SectionTwo from "@/components/Pageconfigurator/SectionTwo";
 import PageTopSection from "@/components/Section/PageTopSection";
-import { configuratordata, configuratortopdata } from "@/constants/3dconfiguratordata";
-import { carddata } from "@/constants/imagecard";
+import { configuratordata, configuratortopdata, secsixcarddata } from "@/constants/3dconfiguratordata";
 
 const page = () => {
   return (
@@ -13,9 +12,9 @@ const page = () => {
       <PageTopSection data={configuratortopdata} />
       <SectionTwo />
       <SectionThree />
-      <SectionFour textimgcard={carddata.slice(0, 1)} titlecontent={configuratordata[0].textdata[2]} />
+      <SectionFour textimgcard={secsixcarddata.slice(0, 1)} titlecontent={configuratordata[0].textdata[2]} />
       <SectionFive />
-      <SectionFour textimgcard={carddata} titlecontent={configuratordata[0].textdata[2]} />
+      <SectionFour textimgcard={secsixcarddata} titlecontent={configuratordata[0].textdata[2]} />
       <BgBanner />
     </div>
   );

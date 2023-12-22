@@ -1,11 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { footerdata } from "@/constants/footer";
+import useRender from "@/hooks/useRender";
 
 import "./style.css";
 
 function Footer() {
-  return (
+  const pathname = usePathname();
+  const isRender = useRender(pathname);
+  return isRender === false ? null : (
     <div className="w-full" style={{ backgroundColor: "#191919", padding: "60px 0" }}>
       <div className="layout">
         <div className="flex">
@@ -20,7 +26,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="text-[#949494]" href="/surpport">
+                <Link className="text-[#949494]" href="/surpport/mail">
                   문의
                 </Link>
               </li>

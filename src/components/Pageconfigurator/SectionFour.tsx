@@ -9,7 +9,7 @@ import type { CarddataType } from "@/constants/imagecard";
 const SectionFour = ({ textimgcard, titlecontent }: { textimgcard: CarddataType[]; titlecontent: TextDataItem }) => {
   return (
     <>
-      <div className="section-tit text-center mb-[60px]" style={{ padding: "30px 60px 0 60px" }}>
+      <div className="section-tit text-center" style={{ padding: "30px 60px 0 60px" }}>
         <SectionTitleAndContent content={titlecontent} />
       </div>
       <TextImageCard data={textimgcard} />
